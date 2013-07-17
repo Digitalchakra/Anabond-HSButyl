@@ -7,7 +7,7 @@
           <div class="foot_lft">
           
           <p>
-          &copy; Anabond HSButyl &nbsp;| <span> <a href="#">privacy policy</a> </span></p>
+          &copy; Copyrights Anabond HSButyl All Rights Reserved | Privacy Policy</p>
           </div>
       </div>
    </div>

@@ -23,10 +23,10 @@
         	<li class="sosusmenu"><a <? if($page =="") echo 'class="active_link"'; ?>>MARKET</a>
           	<ul>
             		<li class="const"><a href="<?=base_url('market/index/1');?>">Construction</a></li>
-            		<li class="automobile"><a href="<?=base_url('market/index/2');?>">Automobile</a></li>
-            		<li><a href="<?=base_url('market/index/3');?>">Windmill</a></li>
-            		<li><a href="<?=base_url('market/index/4');?>">Aerospace</a></li>
-            		<li><a href="<?=base_url('market/index/5');?>">Electrical Industries</a></li>
+            		<li class="automobi"><a href="<?=base_url('market/index/2');?>">Automobile</a></li>
+            		<li class="widmill"><a href="<?=base_url('market/index/3');?>">Windmill</a></li>
+            		<li class="areosp"><a href="<?=base_url('market/index/4');?>">Aerospace</a></li>
+            		<li class="eleind"><a href="<?=base_url('market/index/5');?>">Electrical Industries</a></li>
             		<li><a href="<?=base_url('market/index/6');?>">Silos</a></li>
             </ul>
           </li>

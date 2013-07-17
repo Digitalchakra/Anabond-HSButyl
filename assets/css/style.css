@@ -44,8 +44,12 @@ h1,h2{font-family: arialbd; font-size:30px; text-transform:uppercase;}
  .header .srch{}
 
 .sosusmenu:hover ul { position:absolute; display: block; z-index:99999;}
-.sosusmenu ul li{display:block; float:none !important; padding:5px 10px; border-bottom:1px solid #e1e1e1;}
-
+.sosusmenu ul li{display:block; float:none !important; padding:8px 38px; border-bottom:1px solid #e1e1e1;}
+.sosusmenu .const{ background:url(../images/sprite.png) -7px -447px  no-repeat;}
+.sosusmenu .automobi{ background:url(../images/sprite.png) -7px -447px  no-repeat;}
+.sosusmenu .widmill{ background:url(../images/sprite.png) -7px -447px  no-repeat;}
+.sosusmenu .areosp{ background:url(../images/sprite.png) -7px -447px  no-repeat;}
+.sosusmenu .eleind{ background:url(../images/sprite.png) -7px -447px  no-repeat;}
 .sosusmenu ul {
     top: 38px;
     display: none;
@@ -68,7 +72,7 @@ border: none; width:127px; padding:0 0 0 25px;}
 .dd_menu_product{margin:0px 0 30px 10px;}
 .main_container .box_container{padding:10px 10px;}
 .main_container .box_container .box{width:228px; height:250px; margin:10px; float:left; padding:0 0 40px 0; }
-.main_container .box_container .box .inside_box{width:228px; height:230px; border:1px solid #D4D0D0;
+.main_container .box_container .box .inside_box{width:228px; height:230px; border:1px solid #D4D0D0; text-align:center;
 -webkit-box-shadow: 0 8px 6px -6px #626262;
     -moz-box-shadow: 0 8px 6px -6px #626262;
          box-shadow: 0 8px 6px -6px #626262;}
@@ -144,8 +148,8 @@ border: none; width:127px; padding:0 0 0 25px;}
 .rit_box ul{margin:10px 0;}
 .rit_box li{background:url(../images/bul.png) 0px 8px no-repeat; padding:5px 20px;}
 .rit_box p{margin:10px 0; font-size:12px;}
-.rit_box .img1{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) -43px -261px no-repeat; float:left; margin:0px 10px 2px 0px;}
-.rit_box .img2{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) 0px -181px no-repeat; float:left; margin:0px 10px 2px 0px;}
+.rit_box .img1{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) 0px -181px no-repeat; float:left; margin:0px 10px 2px 0px;}
+.rit_box .img2{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) 0px -261px no-repeat; float:left; margin:0px 10px 2px 0px;}
 .rit_box .img3{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) 0px -261px no-repeat; float:left; margin:0px 10px 2px 0px;}
 .rit_box .img4{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) 0px -301px no-repeat; float:left; margin:0 10px 0 0px;}
 .rit_box .img5{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) 0px -341px no-repeat; float:left; margin:0 10px 0 0px;}
@@ -174,6 +178,10 @@ border: none; width:127px; padding:0 0 0 25px;}
 .srl_rit .pg2_enq{width:203px; background:url(../images/sprite.png) -81px -180px no-repeat; padding:30px 0px 8px 0px;  cursor:pointer;  float:left; margin:0 10px 0 5px;}
 .srl_rit .pg2_enq:hover{background:url(../images/sprite.png) -81px -218px no-repeat; padding:30px 0px 8px 0px;  cursor:pointer;  float:left;}
 .srl_rit .phone{margin:10px 0; float:left; font-size: 14px;}
+
+.tabs .dwnld{background:url(../images/dwnload.png) 0px 0px no-repeat; width:149px;}
+.tabs .dwnld a:hover{background:url(../images/dwnload.png) 0px 0px no-repeat !important; width:149px;}
+
 
 
 /************************************** R&D  *************************************************/
@@ -612,3 +620,4 @@ html ul.tabs li.active, html ul.tabs li.active a:hover  {
 	border: 1px solid #ddd;
 	padding: 5px;
 }
+.tab_content .bulll{background:url(../images/bul.png) 0px 7px no-repeat; padding:3px 0 3px 20px;}
