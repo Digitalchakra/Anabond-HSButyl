@@ -45,11 +45,12 @@ h1,h2{font-family: arialbd; font-size:30px; text-transform:uppercase;}
 
 .sosusmenu:hover ul { position:absolute; display: block; z-index:99999;}
 .sosusmenu ul li{display:block; float:none !important; padding:8px 38px; border-bottom:1px solid #e1e1e1;}
-.sosusmenu .const{ background:url(../images/sprite.png) -7px -447px  no-repeat;}
+.sosusmenu .const{ background:url(../images/sprite.png) -7px -487px  no-repeat;}
 .sosusmenu .automobi{ background:url(../images/sprite.png) -7px -447px  no-repeat;}
-.sosusmenu .widmill{ background:url(../images/sprite.png) -7px -447px  no-repeat;}
-.sosusmenu .areosp{ background:url(../images/sprite.png) -7px -447px  no-repeat;}
-.sosusmenu .eleind{ background:url(../images/sprite.png) -7px -447px  no-repeat;}
+.sosusmenu .widmill{ background:url(../images/sprite.png) -7px -526px  no-repeat;}
+.sosusmenu .areosp{ background:url(../images/sprite.png) -7px -566px  no-repeat;}
+.sosusmenu .eleind{ background:url(../images/sprite.png) -7px -606px  no-repeat;}
+.sosusmenu .silos{background:url(../images/sprite.png) -7px -647px  no-repeat;}
 .sosusmenu ul {
     top: 38px;
     display: none;
