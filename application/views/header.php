@@ -27,7 +27,7 @@
             		<li class="widmill"><a href="<?=base_url('market/index/3');?>">Windmill</a></li>
             		<li class="areosp"><a href="<?=base_url('market/index/4');?>">Aerospace</a></li>
             		<li class="eleind"><a href="<?=base_url('market/index/5');?>">Electrical Industries</a></li>
-            		<li><a href="<?=base_url('market/index/6');?>">Silos</a></li>
+            		<li class="silos"><a href="<?=base_url('market/index/6');?>">Silos</a></li>
             </ul>
           </li>
         	<li><a <? if($page =="product") echo 'class="active_link"'; ?> href="<?=base_url('product');?>">PRODUCTS</a></li>
