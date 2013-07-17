@@ -10,23 +10,23 @@
           <tr>
             <th class="cont_txt1 " scope="row">Your Name</th>
             <td><input class="cont_txt2" type="text"/ name="name"><br />
-              <span class="err" style='color:#FF0000;' id="name_err"></span></td>
+              <span class="err" style='color:#FF0000; font-size:11px;' id="name_err"></span></td>
           </tr>
           <tr>
             <th class="cont_txt1 " scope="row">Company Name</th>
             <td><input class="cont_txt2" type="text"/ name="company"><br />
-              <span class="err" style='color:#FF0000;' id="company_err"></span></td>
+              <span class="err" style='color:#FF0000;  font-size:11px;' id="company_err"></span></td>
           </tr>
           <tr>
-            <th class="cont_txt1 " scope="row">Phone Number</th>
+            <th class="cont_txt1 " scope="row">Phone Number*</th>
             <td><input class="cont_txt2" type="text"/ name="phone"><br />
-              <span class="err" style='color:#FF0000;' id="phone_err"></span></td>
+              <span class="err" style='color:#FF0000;  font-size:11px;' id="phone_err"></span></td>
           </tr>
           <tr>
             <th class="cont_txt1 " scope="row">Email Address*</th>
             <td><input class="cont_txt2" type="text"/ id="email" name="email">
               <br />
-              <span class="err" style='color:#FF0000;' id="email_err"></span></td>
+              <span class="err" style='color:#FF0000;  font-size:11px;' id="email_err"></span></td>
           </tr>
         </table>
         <input id="productname" name="pname" type="hidden" value="<? if(isset($product_name)) { echo $product_name; }?>"> 
@@ -49,12 +49,12 @@
 <div class="clearall"></div>
 <div id="contact" class="contact ">
 
-<div class="contact_lft">
+<div class="contact_lft contact_cnt_cnt">
       	<div class="contact_container">
         	
         	<div id="img_container" class="img_container">
           <!-- product drop down -->
-				<div class="dd_menu">
+				<div class="dd_menu_contactpg">
 					<div class="dropdown"> <a id="account" class="account" > <span> <? if(isset($product_name)) { echo $product_name; } else { echo 'select product';} ?></span> </a>
 						<div id="submenu" class="submenu" style="display: none; ">
 						<ul class="root">
@@ -68,11 +68,13 @@
 				  </div>
 				 </div>
           <!-- product drop down -->
-          <p id="pname"><? if(isset($product_name)) { echo $product_name; } else { echo 'Product Name'; }?></p>      
+        <?php /*?>  <p id="pname"><? if(isset($product_name)) { echo $product_name; } else { echo 'Product Name'; }?></p> <?php */?>     
                <? if(isset($product_name)) { ?>
                 <img id="pimage" src="<?=base_url('assets/images/icon_S').'/'.$product_image.'.png';?>" alt="" title="" width="260px" height="260px"/>
                 <?} else {?> 
+                <div class="center_bx1">
                  <img id="pimage" src="<?=base_url('assets/images/icon_S/default.png');?>" alt="" title="" width="260px" height="260px"/>
+                </div>
                 <? }?>
           </div>
         </div>
@@ -87,8 +89,16 @@
           <tr>
             <table>
               <tr>
-                <td><?=$captcha['image'];?><input type="text" id="txtInput" name="captcha"/><br />
-              <span class="err" style='color:#FF0000;' id="captcha_err"></span></td>
+                <td class="captcha_img"><?=$captcha['image'];?></td>
+               
+              </tr>
+              <tr>
+               <td><input class="captcha_txt" type="text" id="txtInput" name="captcha"/></td>
+              	<td><br />
+              		<p class="err" style='color:#FF0000; display:block; clear:both;  margin: 2px 0 0 -153px; font-size:11px!important;' id="captcha_err">
+                  <br />
+                  </p><br />
+              	</td>
               </tr>
             </table>
           </tr>
@@ -96,7 +106,7 @@
             <td><input id="contact_submit" class="sss_send_btn" type="button" value=""/></td>
           </tr>
         </table>
-        <p class="err" style='color:#72C34A;' id="msg_disp"></p>
+        <p class="err" style='color:#72C34A;  font-size:11px;' id="msg_disp"></p>
   </div>
   </form>    
   <div class="contnt_rit">

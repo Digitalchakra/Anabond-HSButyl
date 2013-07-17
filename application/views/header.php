@@ -36,12 +36,24 @@
         	<li><a <? if($page =="contact") echo 'class="active_link"'; ?> href="<?=base_url('contact');?>">CONTACT US</a></li>
         </ul>
       
-      <div class="srch" style="float:right">
-				
-        <form id="tfnewsearch" method="get" action="#">
+      <div class="srch" style="float:right; width:220px;">
+				<script>
+  (function() {
+    var cx = '002954699086083840021:q1k1fj138g8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only></gcse:searchbox-only>
+        <!--<form id="tfnewsearch" method="get" action="#">
           <input type="text" id="tfq" class="tftextinput4" name="q" size="21" maxlength="120" value="search" onblur="if (this.value == '') {this.value = 'search';}" onfocus="if (this.value == 'search') {this.value = '';}">
           <input type="submit" value="GO" class="tfbutton4">
-        </form>
+        </form>-->
       </div>
     </div><div class="clearall"></div>
   </div><div class="clearall"></div>

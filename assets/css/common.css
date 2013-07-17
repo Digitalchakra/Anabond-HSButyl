@@ -155,13 +155,14 @@ padding: 0 0 39% 0;
 .sss_send_btn{
 	width: 127px; height: 35px; display: block;
 	border: none;
-	cursor:pointer;margin-top: 10px;
+	cursor:pointer;
+	margin-top: -20px;
 margin-bottom: 15px;
 margin-left:-5px;
 	background:transparent url(../images/sprite.png) -246px -99px no-repeat;
 }
 
-
+.inside_box img{margin:18px 0 0 0;}
 .sss_send_btn:hover{
 	background:transparent url(../images/sprite.png) -248px -138px no-repeat;
 }

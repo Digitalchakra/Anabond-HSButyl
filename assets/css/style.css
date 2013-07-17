@@ -71,6 +71,7 @@ border: none; width:127px; padding:0 0 0 25px;}
 .main_container h1{padding:10px 10px; margin:30px 0 10px 0; font-size:24px; float:left; width:200px;}
 .dd_menu{margin:36px 0 30px 175px;}
 .dd_menu_product{margin:0px 0 30px 10px;}
+.dd_menu_contactpg{margin:36px 0 30px 10px;}
 .main_container .box_container{padding:10px 10px;}
 .main_container .box_container .box{width:228px; height:250px; margin:10px; float:left; padding:0 0 40px 0; }
 .main_container .box_container .box .inside_box{width:228px; height:230px; border:1px solid #D4D0D0; text-align:center;
@@ -130,6 +131,8 @@ border: none; width:127px; padding:0 0 0 25px;}
 .contnt_rit{float:right; width:477px; height:315px; border:1px solid #e9e8e8; margin:80px 10px 20px 10px;}
 .img_container p{text-align:center; width: 65%;}
 
+.contact_cnt_cnt p{font-size:11px!important;}
+
 /********************************* page2(product) ****************background-color:red;*******************************/ 
 
 .product_pg{width:1020px;  margin:0 auto; padding:30px 0 30px 0; }
@@ -175,15 +178,19 @@ border: none; width:127px; padding:0 0 0 25px;}
 
 .product_pg .scroll{width:98%;}
 .product_pg .scroll .srl_left{ float:left; padding:0 0px 10px 13px;}
-.product_pg .scroll .srl_rit{ float:right;}
-.srl_rit .pg2_enq{width:203px; background:url(../images/sprite.png) -81px -180px no-repeat; padding:30px 0px 8px 0px;  cursor:pointer;  float:left; margin:0 10px 0 5px;}
-.srl_rit .pg2_enq:hover{background:url(../images/sprite.png) -81px -218px no-repeat; padding:30px 0px 8px 0px;  cursor:pointer;  float:left;}
-.srl_rit .phone{margin:10px 0; float:left; font-size: 14px;}
+.product_pg .scroll .srl_rit{ float:right; width: 433px;}
+.srl_rit .pg2_enq{width:203px; background:url(../images/sprite.png) -81px -180px no-repeat; padding:12px 0px 8px 0px;  cursor:pointer;  float:left; margin:0 10px 0 5px; border:none;}
+.srl_rit .pg2_enq:hover{background:url(../images/sprite.png) -81px -218px no-repeat; padding:12px 0px 8px 0px;  cursor:pointer;  float:left;  border:none;}
+.srl_rit .phone{margin:10px 0;  font-size: 14px;}
 
 .tabs .dwnld{background:url(../images/dwnload.png) 0px 0px no-repeat; width:149px;}
 .tabs .dwnld a:hover{background:url(../images/dwnload.png) 0px 0px no-repeat !important; width:149px;}
 
-
+.center_bx1 {
+width: 262px;
+height: 264px;
+border: 1px solid #e9e8e8;
+}
 
 /************************************** R&D  *************************************************/
 .randd h1{line-height:34px;}
@@ -225,9 +232,11 @@ border: none; width:127px; padding:0 0 0 25px;}
 .cnt_lft table tr .phone_img{background:url(../images/phone.png) no-repeat 10px 12px;}
 .cnt_lft table tr .mail_img{background:url(../images/mail.png) no-repeat 10px 12px;}
 
-.captcha_img{background:url(../images/captcha.jpg) no-repeat 0 0 ; border:none; font-weight:bold; font-size: 17px; margin: 10px 2px; text-align:center; }
+
 .refresh{background: url(../images/refers.png) no-repeat 0 14px;border: none;width: 36px;height: 43px;margin: 0px 0 0 5px;padding: 10px; cursor:pointer;}
 
+.captcha_img{padding: 15px 0 0 2px;}
+.captcha_txt{margin: 10px 0 0 2px; width: 146px;}
 
 .foot_lft p span a{margin:-22px 0 0 8px!important; color:#fff;}
 .foot_lft p span a:hover{color:#72c34a;}

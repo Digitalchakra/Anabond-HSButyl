@@ -30,9 +30,9 @@
 		<form action="<?=base_url('contact');?>" method="POST">
 			<input type="hidden" name="product_name" value="<?=$product_first['name'];?>" />
 			<input type="hidden" name="product_image" value="<?=$product_first['image'];?>" />
-			<input class="pg2_enq" style="width:203px" type="submit" value="" />
+			<input class="pg2_enq"  type="submit" value="" />
 		</form>
-            <p class="pg2_enq"><a href="#"></a></p>
+            
         <p class="phone">Or &nbsp;Call:  +91-44-2346 0041/42/43</p>
     </div>
   </div><div class="clearall"></div>
