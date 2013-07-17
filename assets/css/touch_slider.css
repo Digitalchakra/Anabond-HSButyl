@@ -1,0 +1,91 @@
+.slider_view, .touchslider{
+	width:1020px; height:420px;	
+	margin: 0 auto;overflow: hidden;
+}
+
+.slider_item{
+	width:1020px; height:420px; 
+
+
+}
+
+
+.slide_1, .slide_2{
+	height: 420px;	float: left;  
+	color: #fff;
+	padding: 10px;
+}
+.slide_1{
+	width: 350px;
+
+}
+
+.slide_1 img{
+	margin-top: 42px;
+	margin-left: 10px;
+}
+
+.slide_2{
+	width: 570px;
+	
+}
+.slide_2 p b{color:#72c34a; font-weight:bold;}
+
+.slide_2 ul li {
+	color: #232323;
+		line-height: 27px;
+		background:url(../images/bul.png) 0px 7px no-repeat;
+		padding:0 0 0 20px;
+	 
+}
+.slide_2 ul{margin:30px 0 0 0;}
+
+.slider_item a{
+	display: block;
+	position: absolute;
+	bottom: 90px;
+	right: 30px;
+	cursor: pointer;
+	color:#72c34a;
+	z-index:99999;
+}
+.slider_item h2{font-family: Arial, Helvetica, sans-serif;
+font-size: 24px;
+
+margin: 30px 0 20px 0;
+color:#000;}
+
+.slider_item p{
+	color: #232323;
+	line-height: 24px;
+margin: 0 0 10px 0;
+}
+
+.touchslider-nav-item-current{
+	background-color: #72c34a !important;
+}
+.touchslider-nav-item{
+	display: block;
+	width: 40px;
+	height: 5px; 
+	background-color: #232323;
+	float: left;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.touchslider-nav-item:hover{
+	background-color: #72c34a;
+	}
+
+
+	.touchslider{
+		position: relative;
+	}
+
+	.slider_nav{
+		
+		position: absolute;
+		bottom: 50px;
+		left: 402px;
+	}
