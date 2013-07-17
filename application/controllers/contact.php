@@ -18,14 +18,13 @@ class Contact extends CI_Controller {
 		$this->load->model('product_model');
 		$data['view_page'] = 'contact';
 		$data['msg']=NULL;
-		$data['product']=$this->product_model->get_products();
+		$data['success']=-1;
+		
 		if(isset($_POST['submit_feedback']))
 		{
-			 //echo $this->session->userdata('captchaWord'); die;
-			 
 				$this->form_validation->set_rules('name', 'Name', 'trim|required|max_length[30]|min_length[3]');
 				$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|max_length[100]');
-				$this->form_validation->set_rules('phone', 'Phone', 'trim|max_length[17]');
+				$this->form_validation->set_rules('phone', 'Phone', 'trim|max_length[17]|callback_phone_check');
 				$this->form_validation->set_rules('company', 'Company', 'trim|max_length[100]');
 				$this->form_validation->set_rules('message', 'Message', 'trim|required|max_length[1000]');
 				$this->form_validation->set_rules('captcha', "Captcha", 'required|callback_captcha_check');
@@ -41,22 +40,26 @@ class Contact extends CI_Controller {
 				}
 				else
 				{
+					$data['success']=0;
 					$name=$this->input->post('name');
 					$email=$this->input->post('email');
 					$phone=$this->input->post('phone');
 					$company=$this->input->post('company');
 					$message=$this->input->post('message');
+					$product=$this->input->post('pname');
 
 					$values=array(
 						'name' => $name,
 						'email' => $email,
 						'phone' => $phone,
 						'company' => $company,
-						'message' => $message
+						'message' => $message,
+						'product' => $product
 					);
 					$result=$this->feedback_model->add_feedback($values);	// Insert feedback to database
 					if($result)
 					{
+						$data['success']=1;
 						$data['msg']='Thank you, will get back to you shortly !';
 
 						//Mail Configuration
@@ -92,6 +95,10 @@ class Contact extends CI_Controller {
 		}
 		else
 		{
+			if(isset($_POST['product_name']))
+			$data['product_name']=$_POST['product_name'];
+			
+			$data['product']=$this->product_model->get_products();
 			$words = file("./captcha_txt/google_captcha.txt"); 
 			$word = trim($words[rand(0, count($words) - 1)])." ".rand(0,999);
 			$vals = array(
@@ -117,6 +124,20 @@ class Contact extends CI_Controller {
 		else
 		{
 			$this->form_validation->set_message('captcha_check', 'Captcha word mismatch.');
+			return false;
+		}
+	}
+	function phone_check()
+	{
+		$mobile=$this->input->post('phone');
+		$pattern='/^[0-9 \-+]{0,17}$/';
+		if (preg_match($pattern, $mobile))
+		{
+			return true;
+		}
+		else
+		{
+			$this->form_validation->set_message('phone_check', 'Phone should contail number, "+" and "-" only.');
 			return false;
 		}
 	}

@@ -3,30 +3,33 @@
 <div class="product_pg">
   <h1>Contact US</h1>
   <form id="contactForm">
-    <input type="hidden" name="submit_feedback" value=1/>
+    <input type="hidden" name="submit_feedback" value="submit" />
     <div class="contact_pg">
       <div class="cnt_lft">
         <table  border="5">
           <tr>
             <th class="cont_txt1 " scope="row">Your Name</th>
-            <td><input class="cont_txt2" type="text"/ name="name"></td>
+            <td><input class="cont_txt2" type="text"/ name="name"><br />
+              <span class="err" style='color:#FF0000;' id="name_err"></span></td>
           </tr>
           <tr>
             <th class="cont_txt1 " scope="row">Company Name</th>
-            <td><input class="cont_txt2" type="text"/ name="company"></td>
+            <td><input class="cont_txt2" type="text"/ name="company"><br />
+              <span class="err" style='color:#FF0000;' id="company_err"></span></td>
           </tr>
           <tr>
-            <th class="cont_txt1 " scope="row">Phone Number*</th>
-            <td><input class="cont_txt2" type="text"/ name="phone"></td>
+            <th class="cont_txt1 " scope="row">Phone Number</th>
+            <td><input class="cont_txt2" type="text"/ name="phone"><br />
+              <span class="err" style='color:#FF0000;' id="phone_err"></span></td>
           </tr>
           <tr>
             <th class="cont_txt1 " scope="row">Email Address*</th>
             <td><input class="cont_txt2" type="text"/ id="email" name="email">
               <br />
-              <span id="email_err"></span></td>
+              <span class="err" style='color:#FF0000;' id="email_err"></span></td>
           </tr>
         </table>
-        <? if(isset($msg)) { echo "<p style='color:#72C34A;'>".$msg."</p>"; } ?>
+        <input id="productname" name="pname" type="hidden" value="<? if(isset($product_name)) { echo $product_name; }?>"> 
       </div>
       <div class="cnt_rit ">
         <div class="connt_lft">
@@ -49,10 +52,10 @@
 <div class="contact_lft">
       	<div class="contact_container">
         	
-        	<div class="img_container">
+        	<div id="img_container" class="img_container">
           <!-- product drop down -->
 				<div class="dd_menu">
-					<div class="dropdown"> <a id="account" class="account" > <span>select market segment</span> </a>
+					<div class="dropdown"> <a id="account" class="account" > <span> <? if(isset($product_name)) { echo $product_name; } else { echo 'select market segment';} ?></span> </a>
 						<div id="submenu" class="submenu" style="display: none; ">
 						<ul class="root">
 							<? foreach($product as $row) 
@@ -66,7 +69,7 @@
 				 </div>
           <!-- product drop down -->
           <p id="pname">name</p>      
-          <input id="productname" name="pname" type="hidden" value="">      
+               
           <img id="pimage" src="<?=base_url('assets/images/0361-new.png');?>" alt="" title="" width="260px" height="260px"/>
           </div>
         </div>
@@ -80,7 +83,8 @@
           <tr>
             <table>
               <tr>
-                <td><?=$captcha['image'];?><input type="text" id="txtInput" name="captcha"/></td>
+                <td><?=$captcha['image'];?><input type="text" id="txtInput" name="captcha"/><br />
+              <span class="err" style='color:#FF0000;' id="captcha_err"></span></td>
               </tr>
             </table>
           </tr>
@@ -88,6 +92,7 @@
             <td><input id="contact_submit" class="sss_send_btn" type="button" value=""/></td>
           </tr>
         </table>
+        <p class="err" style='color:#72C34A;' id="msg_disp"></p>
   </div>
   </form>    
   <div class="contnt_rit">
@@ -97,46 +102,4 @@
     </div>
 </div>
 <div class="clearall"></div>
-
-<script>
-		$(document).ready(function()
-		{
-			$('#email').keydown(function()
-			{
-				 var email = $('#email').val();
-				 if(email.length >1)
-				 {
-					var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-					if (!filter.test(email)) {
-					 $('#email_err').html('Please provide a valid email address.');
-					}
-					else
-					{
-						$('#email_err').html('');
-					}
-				}
-				else
-					{
-						$('#email_err').html('');
-					}
-				});
-				
-				$('#contact_submit').click(function()
-				{
-					$.ajax({
-					url:baseurl+"contact",
-					data: $('#contactForm').serialize(),
-					dataType:"JSON",
-					type:"POST",
-					success: function(result)
-					{
-					},
-					error: function()
-					{
-						
-					}
-					});
-					
-					});
-		});
-    </script>
+<script src="<?=base_url('assets/js/contact.js');?>"></script>
