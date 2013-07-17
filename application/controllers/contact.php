@@ -96,9 +96,12 @@ class Contact extends CI_Controller {
 		else
 		{
 			if(isset($_POST['product_name']) && ($_POST['product_name']))
-			$data['product_name']=$_POST['product_name'];
+	
+{
+		$data['product_name']=$_POST['product_name'];
 			$data['product_image']=$_POST['product_image'];
 			$data['product']=$this->product_model->get_products();
+}
 			$words = file("./captcha_txt/google_captcha.txt"); 
 			$word = trim($words[rand(0, count($words) - 1)])." ".rand(0,999);
 			$vals = array(
