@@ -70,7 +70,7 @@
           <!-- product drop down -->
           <p id="pname"><? if(isset($product_name)) { echo $product_name; } else { echo 'Product Name'; }?></p>      
                <? if(isset($product_name)) { ?>
-                <img id="pimage" src="<?=base_url('assets/images/icon_S').'/'.$product_name;?>" alt="" title="" width="260px" height="260px"/>
+                <img id="pimage" src="<?=base_url('assets/images/icon_S').'/'.$product_image.'.png';?>" alt="" title="" width="260px" height="260px"/>
                 <?} else {?> 
                  <img id="pimage" src="<?=base_url('assets/images/icon_S/default.png');?>" alt="" title="" width="260px" height="260px"/>
                 <? }?>
