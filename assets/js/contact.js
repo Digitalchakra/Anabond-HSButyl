@@ -52,7 +52,7 @@ $(document).ready(function()
 						else if(result.resultset.success == 1)
 						{
 							$("input[type=text], textarea").val("");
-							$('#img_container').hide();
+							//$('#img_container').hide();
 							$('#msg_disp').text(result.resultset.msg);
 						}
 						else

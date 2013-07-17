@@ -55,7 +55,7 @@
         	<div id="img_container" class="img_container">
           <!-- product drop down -->
 				<div class="dd_menu">
-					<div class="dropdown"> <a id="account" class="account" > <span> <? if(isset($product_name)) { echo $product_name; } else { echo 'select market segment';} ?></span> </a>
+					<div class="dropdown"> <a id="account" class="account" > <span> <? if(isset($product_name)) { echo $product_name; } else { echo 'select product';} ?></span> </a>
 						<div id="submenu" class="submenu" style="display: none; ">
 						<ul class="root">
 							<? foreach($product as $row) 
@@ -68,9 +68,12 @@
 				  </div>
 				 </div>
           <!-- product drop down -->
-          <p id="pname">name</p>      
-               
-          <img id="pimage" src="<?=base_url('assets/images/0361-new.png');?>" alt="" title="" width="260px" height="260px"/>
+          <p id="pname"><? if(isset($product_name)) { echo $product_name; } else { echo 'Product Name'; }?></p>      
+               <? if(isset($product_name)) { ?>
+                <img id="pimage" src="<?=base_url('assets/images/icon_S').'/'.$product_name;?>" alt="" title="" width="260px" height="260px"/>
+                <?} else {?> 
+                 <img id="pimage" src="<?=base_url('assets/images/icon_S/default.png');?>" alt="" title="" width="260px" height="260px"/>
+                <? }?>
           </div>
         </div>
         <table>
