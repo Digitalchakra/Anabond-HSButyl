@@ -81,7 +81,8 @@
             <td class="cont_txt3">How can we help you?</td>
           </tr>
           <tr>
-            <td><textarea class="cont_txt4" name="message"></textarea></td>
+            <td><textarea class="cont_txt4" name="message"></textarea><br />
+              <span class="err" style='color:#FF0000;' id="message_err"></span></td>
           </tr>
           <tr>
             <table>
