@@ -5,7 +5,7 @@
 <div class="product_pg">
   <h1><?=$product_head['name']?></h1>
   <p class="pg2_cnt1">HS Butyl are pleased to announce a new butyl tape to their comprehensive range of butyl tapes.Our new 0800 product has been designed for use within the Vehicle Construction Sector.HS Butyl are pleased to announce a new butyl tape to their comprehensive range of butyl tapes. </p>
-  <h2>select a product</h2>
+  <br /><br /><br />
   <div class="clearall"></div>
   <div class="scroll">
   	<div class="srl_left">
