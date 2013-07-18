@@ -22,11 +22,11 @@ class Contact extends CI_Controller {
 		
 		if(isset($_POST['submit_feedback']))
 		{
-				$this->form_validation->set_rules('name', 'Name', 'trim|required|max_length[30]|min_length[3]');
+				$this->form_validation->set_rules('name', 'Name', 'trim|max_length[30]|min_length[3]');
 				$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|max_length[100]');
 				$this->form_validation->set_rules('phone', 'Phone', 'trim|max_length[17]|callback_phone_check');
 				$this->form_validation->set_rules('company', 'Company', 'trim|max_length[100]');
-				$this->form_validation->set_rules('message', 'Message', 'trim|required|max_length[1000]');
+				$this->form_validation->set_rules('message', 'Message', 'trim|max_length[1000]');
 				$this->form_validation->set_rules('captcha', "Captcha", 'required|callback_captcha_check');
 				if($this->form_validation->run() ==FALSE)
 				{
