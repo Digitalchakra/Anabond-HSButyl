@@ -18,7 +18,7 @@
 					if(isset($selectedID) && ($selectedID))
 					echo $product_first['name'];
 					else
-					echo 'select market segment';
+					echo 'Select Product';
 					?>
 				</span>
 			</a>
@@ -56,11 +56,28 @@
       <div class="product_container2">
         <div class="pro_lft">
           <p>MAKE AN ENQUIRY</p>
-          <input class="textbx" type="text" value="Name" onblur="if (this.value == '') {this.value = 'Name';}" onfocus="if (this.value == 'Name') {this.value = '';}" />
-          <input class="textbx" type="text" value="Email id" onblur="if (this.value == '') {this.value = 'Email id';}" onfocus="if (this.value == 'Email id') {this.value = '';}"/>
+          <form id="contactForm">
+		<input type="hidden" name="submit_feedback" value="submit" />
+		<span style="display:none" id="phone_err"> </span>
+		<span style="display:none" id="company_err"> </span>
+          <input name="name" class="textbx" type="text" value="Name" onblur="if (this.value == '') {this.value = 'Name';}" onfocus="if (this.value == 'Name') {this.value = '';}" />
+          <br />
+              <span class="err" style='color:#FF0000; font-size:11px;' id="name_err"></span>
+          <input id="email" name="email" class="textbx" type="text" value="Email id" onblur="if (this.value == '') {this.value = 'Email id';}" onfocus="if (this.value == 'Email id') {this.value = '';}"/>
+          <br />
+              <span class="err" style='color:#FF0000;  font-size:11px;' id="email_err"></span>
           
           <textarea value="Post Enquiry Here" onblur="if (this.value == '') {this.value = 'Post Enquiry Here';}" onfocus="if (this.value == 'Post Enquiry Here') {this.value = '';}"></textarea>
-          <input class="sss_post_btn" type="button" value="" />
+          <br />
+              <span class="err" style='color:#FF0000;' id="message_err"></span>
+          <input id="productname" name="pname" type="hidden" value="<?=$product_first['name'];?>"> 
+          <div class="captcha_img"><?=$captcha['image'];?></div>
+          <input class="captcha_txt" type="text" id="txtInput" name="captcha"/>
+          <br />
+             <span class="err" style='color:#FF0000; display:block; clear:both; font-size:11px!important;' id="captcha_err"></span>
+          <input class="sss_post_btn" type="button" id="contact_submit" value="" />
+          </form>
+          <span class="err" style='color:#72C34A;  font-size:11px;' id="msg_disp"></span>
         </div>
       </div>
     </div>
@@ -134,5 +151,60 @@
 	  {
 	  $("#submenu").toggle();   
 	  });
+	  $('#email').keydown(function()
+			{
+				 var email = $('#email').val();
+				 if(email.length >1)
+				 {
+					var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+					if (!filter.test(email)) {
+					 $('#email_err').html('Please provide a valid email address.');
+					}
+					else
+					{
+						$('#email_err').html('');
+					}
+				}
+				else
+					{
+						$('#email_err').html('');
+					}
+				});
+				
+				$('#contact_submit').click(function()
+				{
+					//$('.err').html("");
+					$.ajax({
+					url:baseurl+"contact",
+					data: $('#contactForm').serialize(),
+					dataType:"JSON",
+					type:"POST",
+					success: function(result)
+					{
+						if(result.resultset.success == -1)
+						{
+							$.each(result.resultset.err,function(index,key) {
+								$('#'+index+'_err').html(key);
+								//console.log(index);
+								});				
+						}
+						/*else if(result.resultset.success == 1)
+						{
+							$("input[type=text], textarea").val("");
+							//$('#img_container').hide();
+							$('#msg_disp').text(result.resultset.msg);
+						}*/
+						/*else
+						{
+							$('#msg_disp').text(result.resultset.msg);
+						}*/
+					},
+					error: function()
+					{
+						$('#msg_disp').text('Intenal error, try again !');
+					}
+					});
+					
+					});
   });
 </script>

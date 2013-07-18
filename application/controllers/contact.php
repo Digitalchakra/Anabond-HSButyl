@@ -108,7 +108,9 @@ class Contact extends CI_Controller {
 					'img_path' => './tmp/captcha/',
 					'word' =>$word,
 					'img_url' => base_url().'tmp/captcha/',
-					'expiration' => '3600'
+					'font_path' =>'./assets/fonts/arialbd.ttf',
+					'expiration' => '3600',
+					'img_width' => '210'
 					);
 
 				$data['captcha'] = create_captcha($vals);
