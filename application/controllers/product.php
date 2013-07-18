@@ -16,6 +16,8 @@ class Product extends CI_Controller {
 		$pid = ($this->uri->segment(3)) ? $this->uri->segment(3) : NULL;
 		$this->load->model('product_model');
 		$data['product']=$this->product_model->get_products();
+		$data['product_head']['name']='PRODUCTS';
+		$data['selectedID'] = NULL;
 		if(isset($data['product'][0]))
 		{
 			if($pid)
@@ -24,18 +26,14 @@ class Product extends CI_Controller {
 			   {
 				  if ( $row['id'] === $pid )
 					{
-						//$data['product_head']=$data['product'][$key];
-						$data['product_head']['name']='PRODUCTS';
 						$data['product_first']=$data['product'][$key];
+						$data['selectedID'] = 1;
 						break;
 					}
-					 //$i++;
 			   }
 			}
 			else
 			{
-				//$data['product_head']=$data['product'][0];
-				$data['product_head']['name']='PRODUCTS';
 				$data['product_first']=$data['product'][0];
 			}
 			$data['view_page'] = 'product';

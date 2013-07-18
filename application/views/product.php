@@ -11,7 +11,17 @@
   	<div class="srl_left">
     	<!--		dropdown menu  -->
 			<div class="dd_menu_product">
-        <div class="dropdown"> <a id="account" class="account" > <span>select market segment</span> </a>
+        <div class="dropdown">
+			<a id="account" class="account" >
+				<span>
+					<?
+					if(isset($selectedID) && ($selectedID))
+					echo $product_first['name'];
+					else
+					echo 'select market segment';
+					?>
+				</span>
+			</a>
         	<div id="submenu" class="submenu" style="display: none; ">
             <ul class="root_producr">
             	<? foreach($product as $row) 
