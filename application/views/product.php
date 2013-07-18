@@ -63,7 +63,7 @@
           <input name="name" class="textbx" type="text" value="Name" onblur="if (this.value == '') {this.value = 'Name';}" onfocus="if (this.value == 'Name') {this.value = '';}" />
           <br />
               <span class="err" style='color:#FF0000; font-size:11px;' id="name_err"></span>
-          <input id="email" name="email" class="textbx" type="text" value="Email id" onblur="if (this.value == '') {this.value = 'Email id';}" onfocus="if (this.value == 'Email id') {this.value = '';}"/>
+          <input id="email" name="email" class="textbx or_top_margin" type="text" value="Email id" onblur="if (this.value == '') {this.value = 'Email id';}" onfocus="if (this.value == 'Email id') {this.value = '';}"/>
           <br />
               <span class="err" style='color:#FF0000;  font-size:11px;' id="email_err"></span>
           
@@ -71,7 +71,8 @@
           <br />
               <span class="err" style='color:#FF0000;' id="message_err"></span>
           <input id="productname" name="pname" type="hidden" value="<?=$product_first['name'];?>"> 
-          <div class="captcha_img" id="captcha_img"></div><span id="getcaptcha">icon</span>
+          <div class="captcha_img" id="captcha_img"></div><span class="cap_get" id="getcaptcha">&nbsp;</span>
+          <div class="clearall"></div>
           <input class="captcha_txt" type="text" id="txtInput" name="captcha"/>
           <br />
              <span class="err" style='color:#FF0000; display:block; clear:both; font-size:11px!important;' id="captcha_err"></span>
@@ -102,9 +103,9 @@
           <p>Automobile</p>
         </div>
         <div class="clearall"></div>
-        <div> <span class="img2" href="#"></span>
+        <!-- <div> <span class="img2" href="#"></span>
           <p>Construction</p>
-        </div>
+        </div> -->
         <div class="clearall"></div>
 
       </div>
@@ -114,7 +115,7 @@
 		  <ul class="tabs">
 			<li><a href="#tab1">Product Description</a></li>
 			<li><a href="#tab2">Technical Information</a></li>
-			<li class="dwnld"><a href="#tab3">&nbsp;</a></li>
+			<li class="dwnld"><a href="#tab3"><span class="icon_dld"></span>Download</a></li>
 		  </ul>
 		  <div class="tab_container">
 			<div id="tab1" class="tab_content">
@@ -128,7 +129,7 @@
 			  <p class="bulll">Product uses</p>
 			</div>
 			<div id="tab3" class="tab_content">
-				<p class="bulll">Download PDF</p>
+				<a class="dwld_btn">Download PDF</a>
 			</div>
 		  </div>
 		  <!--<span class="sss_download"></span>-->
