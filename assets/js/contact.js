@@ -9,7 +9,7 @@ $(document).ready(function()
 					  $("#submenu").hide();
 					  if($(this).attr('pid')=='NULL')
 					  {
-						  $("#account").html('<span>General Query</span>');
+						  $("#account").html('<span>General Enquiry</span>');
 						  $('#productname').attr('value','NULL');
 						  $('#pname').text('');
 						  $("#pimageDiv").hide();

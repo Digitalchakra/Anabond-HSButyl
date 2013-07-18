@@ -55,7 +55,7 @@
         	<div id="img_container" class="img_container">
           <!-- product drop down -->
 				<div class="dd_menu_contactpg">
-					<div class="dropdown"> <a id="account" class="account" > <span> <? if(isset($product_name)) { echo $product_name; } else { echo 'General Query';} ?></span> </a>
+					<div class="dropdown"> <a id="account" class="account" > <span> <? if(isset($product_name)) { echo $product_name; } else { echo 'General Enquiry';} ?></span> </a>
 						<div id="submenu" class="submenu" style="display: none; ">
 						<ul class="root">
 							<li > <a imgname="NULL" pid="NULL" class= "market" >General Query</a> </li>
