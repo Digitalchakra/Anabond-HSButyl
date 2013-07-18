@@ -20,7 +20,7 @@
  		 	<a href="<?=base_url();?>" title="HSBUTYL"><h1 style="float:left"></h1></a>
       
       	<ul>
-        	<li class="sosusmenu"><a <? if($page =="") echo 'class="active_link"'; ?>>MARKET</a>
+        	<li class="sosusmenu"><a <? if($page =="market") echo 'class="active_link"'; ?>>MARKET</a>
           	<ul>
             		<li class="const"><a href="<?=base_url('market/index/1');?>">Construction</a></li>
             		<li class="automobi"><a href="<?=base_url('market/index/2');?>">Automobile</a></li>
