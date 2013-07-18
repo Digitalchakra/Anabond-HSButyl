@@ -1,35 +1,18 @@
-$(document).ready(function()
-		{
-			getcaptcha();
-			$('#getcaptcha').click(function(){
+$(function() {
+		$( "#tabs" ).tabs();
+		});
+  $(document).ready(function()
+  {
+	  getcaptcha();
+	  $('#getcaptcha').click(function(){
 		  $('#captcha_img').html('loading...');
 		   getcaptcha();
 		  });
-			$("#account").click(function()
-			  {
-			  $("#submenu").toggle();   
-			  });
-			  $('.market').click(function()
-				  {
-					  $("#submenu").hide();
-					  if($(this).attr('pid')=='NULL')
-					  {
-						  $("#account").html('<span>General Enquiry</span>');
-						  $('#productname').attr('value','NULL');
-						  $('#pname').text('');
-						  $("#pimageDiv").hide();
-					  }
-					  else
-					  {
-						  pname=$(this).text();
-						  $("#account").html('<span>'+pname+'</span>');
-						  $('#productname').attr('value',pname);
-						  $('#pname').text(pname);
-						  $("#pimageDiv").show();
-						  $("#pimage").attr('src',baseurl+'assets/images/icon_S/'+$(this).attr('imgname')+'.png');
-					  }
-				  });
-			$('#email').keydown(function()
+	  $("#account").click(function()
+	  {
+	  $("#submenu").toggle();   
+	  });
+	  $('#email').keydown(function()
 			{
 				 var email = $('#email').val();
 				 if(email.length >1)
@@ -51,7 +34,7 @@ $(document).ready(function()
 				
 				$('#contact_submit').click(function()
 				{
-					$('.err').html("");
+					//$('.err').html("");
 					$.ajax({
 					url:baseurl+"contact",
 					data: $('#contactForm').serialize(),
@@ -63,14 +46,15 @@ $(document).ready(function()
 						{
 							$.each(result.resultset.err,function(index,key) {
 								$('#'+index+'_err').html(key);
+								//console.log(index);
 								});				
 						}
-						else if(result.resultset.success == 1)
+						/*else if(result.resultset.success == 1)
 						{
 							$("input[type=text], textarea").val("");
 							//$('#img_container').hide();
 							$('#msg_disp').text(result.resultset.msg);
-						}
+						}*/
 						else
 						{
 							$('#msg_disp').text(result.resultset.msg);
@@ -83,8 +67,8 @@ $(document).ready(function()
 					});
 					
 					});
-		});
-function getcaptcha()
+  });
+  function getcaptcha()
   {
 	$.ajax({
 			url:baseurl+"captcha",
