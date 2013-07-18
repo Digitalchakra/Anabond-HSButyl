@@ -78,8 +78,12 @@ class Contact extends CI_Controller {
 						$this->email->send();
 	*/
 						//Write mail to support
-						$this->email->subject('New Feedback from EZCV');
-						$content2= 'Dear Admin<br /><br />New feedback submitted on EZCV.<br /><br />Feedback Details:<br />Phone: '.$phone.'<br />Message: '.$message.'<br /><br />Regards<br />Digitalchakra Team';
+						$this->email->subject('New Feedback from Hsbutyl');
+						$content2= 'Dear Admin<br /><br />New feedback submitted on Hsbutyl.<br /><br />Feedback Details:<br />Phone: '.$phone.'<br />
+						Email: '.$emial.'<br />
+						Company: '.$company.'<br />
+						Product: '.$product.'<br />
+						Message: '.$message.'<br /><br />Regards<br />Digitalchakra Team';
 						$this->email->to('aditya@digitalchakra.in');
 						$this->email->message($message);
 						$this->email->send();
