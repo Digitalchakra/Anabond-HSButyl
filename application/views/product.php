@@ -71,7 +71,7 @@
           <br />
               <span class="err" style='color:#FF0000;' id="message_err"></span>
           <input id="productname" name="pname" type="hidden" value="<?=$product_first['name'];?>"> 
-          <div class="captcha_img"><?=$captcha['image'];?></div>
+          <div class="captcha_img" id="captcha_img"></div><span id="getcaptcha">icon</span>
           <input class="captcha_txt" type="text" id="txtInput" name="captcha"/>
           <br />
              <span class="err" style='color:#FF0000; display:block; clear:both; font-size:11px!important;' id="captcha_err"></span>
@@ -141,70 +141,4 @@
   <div class="clearall"></div>
 </div>
 	 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    <script type="text/javascript" >
-		 $(function() {
-		$( "#tabs" ).tabs();
-		});
-  $(document).ready(function()
-  {
-	  $("#account").click(function()
-	  {
-	  $("#submenu").toggle();   
-	  });
-	  $('#email').keydown(function()
-			{
-				 var email = $('#email').val();
-				 if(email.length >1)
-				 {
-					var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-					if (!filter.test(email)) {
-					 $('#email_err').html('Please provide a valid email address.');
-					}
-					else
-					{
-						$('#email_err').html('');
-					}
-				}
-				else
-					{
-						$('#email_err').html('');
-					}
-				});
-				
-				$('#contact_submit').click(function()
-				{
-					//$('.err').html("");
-					$.ajax({
-					url:baseurl+"contact",
-					data: $('#contactForm').serialize(),
-					dataType:"JSON",
-					type:"POST",
-					success: function(result)
-					{
-						if(result.resultset.success == -1)
-						{
-							$.each(result.resultset.err,function(index,key) {
-								$('#'+index+'_err').html(key);
-								//console.log(index);
-								});				
-						}
-						/*else if(result.resultset.success == 1)
-						{
-							$("input[type=text], textarea").val("");
-							//$('#img_container').hide();
-							$('#msg_disp').text(result.resultset.msg);
-						}*/
-						/*else
-						{
-							$('#msg_disp').text(result.resultset.msg);
-						}*/
-					},
-					error: function()
-					{
-						$('#msg_disp').text('Intenal error, try again !');
-					}
-					});
-					
-					});
-  });
-</script>
+    <script src="<?=base_url('assets/js/product.js');?>"></script>

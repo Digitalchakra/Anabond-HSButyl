@@ -91,7 +91,7 @@
           <tr>
             <table>
               <tr>
-                <td class="captcha_img"><?=$captcha['image'];?></td>
+                <td id="captcha_img" class="captcha_img"></td><span id="getcaptcha">icon</span>
                
               </tr>
               <tr>

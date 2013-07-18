@@ -102,20 +102,6 @@ class Contact extends CI_Controller {
 				$data['product_image']=$_POST['product_image'];
 			}
 			$data['product']=$this->product_model->get_products();
-			$words = file("./captcha_txt/google_captcha.txt"); 
-			$word = trim($words[rand(0, count($words) - 1)])." ".rand(0,999);
-			$vals = array(
-					'img_path' => './tmp/captcha/',
-					'word' =>$word,
-					'img_url' => base_url().'tmp/captcha/',
-					'font_path' =>'./assets/fonts/arialbd.ttf',
-					'expiration' => '3600',
-					'img_width' => '210'
-					);
-
-				$data['captcha'] = create_captcha($vals);
-
-			$this->session->set_userdata('captchaWord', $data['captcha']['word']);
 			$this->load->view('template', $data);
 		}
 	}
