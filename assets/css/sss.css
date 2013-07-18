@@ -1,0 +1,7 @@
+.foot_lft a{
+	float: none !important;	
+	color: #ffffff !important;
+	cursor: pointer !important;
+	text-decoration: underline!important;
+
+}
