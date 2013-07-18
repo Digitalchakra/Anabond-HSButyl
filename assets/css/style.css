@@ -2,7 +2,7 @@
 /* CSS Document */
 html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,
 dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}
+time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}
 body {	line-height: 1;}
@@ -109,9 +109,9 @@ border: none; width:127px; padding:0 0 0 25px;}
 .contact_lft p{padding:0 0 10px 2px; font-size: 14px;}
 .contact_lft p span{font-size:18px; line-height:28px;}
 .contact_lft a{color:#000;}
-.contact_lft p .phone_img{background: url(../images/phone.png) 0px 22px no-repeat; padding: 20px 0 20px 25px; font-size: 14px;}
-.contact_lft p .fax_img{background: url(../images/fax.png) 0px 21px no-repeat; padding: 20px 0 20px 25px; font-size: 14px;}
-.contact_lft p .mail_img{background: url(../images/mail.png) 0px 21px no-repeat; padding: 20px 0 20px 25px; font-size: 14px;}
+.contact_lft p .phone_img{background: url(../images/sprite.png) 0px -680px  no-repeat; padding:7px 0 7px 38px; font-size: 14px;  line-height: 36px;}
+.contact_lft p .fax_img{background: url(../images/sprite.png) 0px -762px  no-repeat; padding:7px 0 7px 38px; font-size: 14px; line-height: 26px;}
+.contact_lft p .mail_img{background: url(../images/sprite.png) 0px -735px  no-repeat; padding:7px 0 7px 38px; font-size: 14px;  line-height: 36px;}
 .contact_rit{float:right; width:537px; height:315px; border:1px solid #e9e8e8; margin:41px 10px 20px 10px;}
 
 .footer{width:100%; border-top:5px solid #72c34a; background-color:#000; height:73px;}
@@ -125,9 +125,9 @@ border: none; width:127px; padding:0 0 0 25px;}
 .connt_lft p{padding:0 0 10px 0px; line-height: 22px; font-size: 14px;}
 .connt_lft p span{font-size:18px; line-height:28px;}
 .connt_lft a{color:#000;}
-.connt_lft p .phone_img{background: url(../images/phone.png) 0px 22px no-repeat; padding: 20px 0 20px 25px; font-size: 14px;}
-.connt_lft p .fax_img{background: url(../images/fax.png) 0px 21px no-repeat; padding: 20px 0 20px 25px; font-size: 14px;}
-.connt_lft p .mail_img{background: url(../images/mail.png) 0px 21px no-repeat; padding: 20px 0 20px 25px; font-size: 14px;}
+.connt_lft p .phone_img{background: url(../images/sprite.png) 0px -680px  no-repeat; padding:7px 0 7px 38px; font-size: 14px;  line-height: 36px;}
+.connt_lft p .fax_img{background: url(../images/sprite.png) 0px -762px  no-repeat; padding:7px 0 7px 38px; font-size: 14px; line-height: 26px;}
+.connt_lft p .mail_img{background: url(../images/sprite.png) 0px -735px  no-repeat; padding:7px 0 7px 38px; font-size: 14px;  line-height: 36px;}
 .contnt_rit{float:right; width:477px; height:315px; border:1px solid #e9e8e8; margin:80px 10px 20px 10px;}
 .img_container p{text-align:center; width: 65%;}
 
@@ -145,18 +145,25 @@ border: none; width:127px; padding:0 0 0 25px;}
 .slider_box .slider_bx1{width:209px; height:208px;border: 1px solid #e9e8e8;}
 .center_box{width:279px; height:271px;float:left; }
 .center_box p{padding:10px 0; text-align:center; font-weight:bold;}
-.center_box .center_bx1{width:262px; height:264px; border: 1px solid #e9e8e8; }
+.center_box .center_bx1{width:262px; height:264px; border: 1px solid #D4D0D0; -webkit-box-shadow: 0 8px 6px -6px #626262; -moz-box-shadow: 0 8px 6px -6px #626262; box-shadow: 0 8px 6px -6px #626262; }
 
 
 .rit_box{float:left; margin:0 10px 0 0;}
 .rit_box ul{margin:10px 0;}
 .rit_box li{background:url(../images/bul.png) 0px 8px no-repeat; padding:5px 20px;}
 .rit_box p{margin:10px 0; font-size:12px;}
-.rit_box .img1{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) 0px -181px no-repeat; float:left; margin:0px 10px 2px 0px;}
-.rit_box .img2{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) 0px -261px no-repeat; float:left; margin:0px 10px 2px 0px;}
-.rit_box .img3{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) 0px -261px no-repeat; float:left; margin:0px 10px 2px 0px;}
-.rit_box .img4{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) 0px -301px no-repeat; float:left; margin:0 10px 0 0px;}
-.rit_box .img5{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) 0px -341px no-repeat; float:left; margin:0 10px 0 0px;}
+.rit_box .img1{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) -11px -450px no-repeat; float:left; margin:0px 10px 2px 0px;}
+.rit_box .img2{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) -11px -490px no-repeat; float:left; margin:0px 10px 2px 0px;}
+.rit_box .img3{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) -11px -450px no-repeat; float:left; margin:0px 10px 2px 0px;}
+.rit_box .img4{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) -11px -450px no-repeat; float:left; margin:0 10px 0 0px;}
+.rit_box .img5{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) -11px -450px no-repeat; float:left; margin:0 10px 0 0px;}
+
+
+.rit_box .construction{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) -11px -450px no-repeat; float:left; margin:0px 10px 2px 0px;}
+.rit_box .automobile{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) -11px -490px no-repeat; float:left; margin:0px 10px 2px 0px;}
+.rit_box .windmill_img{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) -11px -490px no-repeat; float:left; margin:0px 10px 2px 0px;}
+.rit_box .aerospace_img{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) -11px -490px no-repeat; float:left; margin:0 10px 0 0px;}
+.rit_box .electric_img{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) -11px -490px no-repeat; float:left; margin:0 10px 0 0px;}
 
 
 .rit_box div p{padding:4px 0 4px 0;}
@@ -189,8 +196,7 @@ border: none; width:127px; padding:0 0 0 25px;}
 .center_bx1 {
 width: 262px;
 height: 264px;
-border: 1px solid #e9e8e8;
-}
+border: 1px solid #D4D0D0; -webkit-box-shadow: 0 8px 6px -6px #626262; -moz-box-shadow: 0 8px 6px -6px #626262; box-shadow: 0 8px 6px -6px #626262; }
 
 /************************************** R&D  *************************************************/
 .randd h1{line-height:34px;}
@@ -216,13 +222,13 @@ border: 1px solid #e9e8e8;
 
 .product_pg .contact_pg{ margin:0 0 30px 0;}
 .contact_pg .cnt_lft{width:50%; float:left;}
-.contact_pg .cnt_lft .cont_txt1{width:150px;  padding:10px 12px; text-align:left;}
+.contact_pg .cnt_lft .cont_txt1{width:150px;  padding:10px 11px; text-align:left;}
 .contact_pg .cnt_lft .cont_txt2{width:250px; }
 .contact_pg .cnt_lft .cont_sel1{width:255px;}
 
 .contact_pg .cnt_rit{width:48%; float:right;}
 .contact_pg .cnt_rit .cont_txt3{padding:10px 0px;}
-.cont_txt4{ width:411px; height:107px; margin:10px 0 0 2px; }
+.cont_txt4{ width:411px; height:107px; margin:10px 0 0 2px; resize:none;}
 
 .contact_pg .cnt_rit .cont_btn1{padding:7px 0px; margin:10px 0 155px 0; float:right; background-color: #77B922; border-radius: 11px; width:64px; border: 1px solid #69A222; cursor:pointer; color:#fff; font-family: Arial, Helvetica, sans-serif;}
 .contact_pg .cnt_rit .cont_btn1:hover{background-color: #fece2a; border-radius: 11px;width:64px;border: 1px solid #e1b10f; cursor:pointer; color:#000; font-family: Arial, Helvetica, sans-serif;}
@@ -240,6 +246,9 @@ border: 1px solid #e9e8e8;
 
 .foot_lft p span a{margin:-22px 0 0 8px!important; color:#fff;}
 .foot_lft p span a:hover{color:#72c34a;}
+
+.capt_reset{background:url(../images/reset icon.png) 0px 0px no-repeat; width:40px; height:40px;}
+
 
 /*************************************** search **********************************************************/
 

@@ -125,13 +125,13 @@ padding: 0 0 39% 0;
 	width: 127px; height: 35px; display: block;
 	border: none; margin-top: 20px;
 	cursor:pointer;
-	background:url(../images/sprite.png) -379px -138px no-repeat;
+	background:url(../images/sprite.png) -389px  -138px no-repeat;
 }
 
 
 .sss_post_btn:hover{
 	width: 130px;
-	background:transparent url(../images/sprite.png) -381px -99px no-repeat;
+	background:transparent url(../images/sprite.png) -389px  -99px no-repeat;
 }
 
 .sss_relative{
@@ -158,11 +158,11 @@ padding: 0 0 39% 0;
 	cursor:pointer;
 	margin-top: -20px;
 margin-bottom: 15px;
-margin-left:-5px;
-	background:transparent url(../images/sprite.png) -246px -99px no-repeat;
+
+	background:transparent url(../images/sprite.png) -254px -99px no-repeat;
 }
 
 .inside_box img{margin:18px 0 0 0;}
 .sss_send_btn:hover{
-	background:transparent url(../images/sprite.png) -248px -138px no-repeat;
+	background:transparent url(../images/sprite.png) -254px -138px no-repeat;
 }

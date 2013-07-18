@@ -87,7 +87,7 @@
     	<h1 >Products</h1>       
 <!--		dropdown menu  -->
 			<div class="dd_menu">
-        <div class="dropdown"> <a id="account" class="account" > <span>select market segment</span> </a>
+        <div class="dropdown"> <a id="account" class="account" > <span>Select Product</span> </a>
         	<div id="submenu" class="submenu" style="display: none; ">
             <ul class="root">
             <li > <a mid='1' class= "market" >Construction</a> </li>
