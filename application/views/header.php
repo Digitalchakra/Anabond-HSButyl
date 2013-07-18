@@ -36,7 +36,7 @@
         	<li><a <? if($page =="contact") echo 'class="active_link"'; ?> href="<?=base_url('contact');?>">CONTACT US</a></li>
         </ul>
       
-      <div class="srch" style="float:right; width:220px;">
+      <div class="srch" style="float:right; width:220px;margin-top:-6px;">
 				
 				<script>
   (function() {
