@@ -18,7 +18,7 @@
               <span class="err" style='color:#FF0000;  font-size:11px;' id="company_err"></span></td>
           </tr>
           <tr>
-            <th class="cont_txt1 " scope="row">Phone Number*</th>
+            <th class="cont_txt1 " scope="row">Phone Number</th>
             <td><input class="cont_txt2" type="text"/ name="phone"><br />
               <span class="err" style='color:#FF0000;  font-size:11px;' id="phone_err"></span></td>
           </tr>
@@ -91,13 +91,13 @@
           <tr>
             <table>
               <tr>
-                <td  class="captcha_img"><span id="captcha_img"></span><span id="getcaptcha" class="capt_reset"></span></td>
+                <td  ><div class="captcha_img1"><span id="captcha_img"></span><span id="getcaptcha" class="cap_get1">&nbsp;</span></div></td>
                
               </tr>
               <tr>
-               <td><input class="captcha_txt" type="text" id="txtInput" name="captcha"/></td>
+               <td><input style="margin:-25px 0 0 0;" class="captcha_txt" type="text" id="txtInput" name="captcha"/></td>
               	<td><br />
-              		<p class="err" style='color:#FF0000; display:block; clear:both;  margin: 2px 0 0 -153px; font-size:11px!important;' id="captcha_err">
+              		<p class="err" style='color:#FF0000; display:block; clear:both;  margin: 10px 0 0 -264px; float: left; font-size:11px!important;' id="captcha_err">
                   <br />
                   </p><br />
               	</td>

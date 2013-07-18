@@ -159,10 +159,10 @@ padding: 0 0 39% 0;
 	margin-top: -20px;
 margin-bottom: 15px;
 
-	background:transparent url(../images/sprite.png) -254px -99px no-repeat;
+	background:transparent url(../images/sprite.png) -256px -99px no-repeat;
 }
 
 .inside_box img{margin:18px 0 0 0;}
 .sss_send_btn:hover{
-	background:transparent url(../images/sprite.png) -254px -138px no-repeat;
+	background:transparent url(../images/sprite.png) -256px -138px no-repeat;
 }
