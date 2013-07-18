@@ -7,11 +7,22 @@ $(document).ready(function()
 			  $('.market').click(function()
 				  {
 					  $("#submenu").hide();
-					  pname=$(this).text();
-					  $("#account").html('<span>'+pname+'</span>');
-					  $('#productname').attr('value',pname);
-					  $('#pname').text(pname);
-					  $("#pimage").attr('src',baseurl+'assets/images/icon_S/'+$(this).attr('imgname')+'.png');
+					  if($(this).attr('pid')=='NULL')
+					  {
+						  $("#account").html('<span>General Query</span>');
+						  $('#productname').attr('value','NULL');
+						  $('#pname').text('');
+						  $("#pimageDiv").hide();
+					  }
+					  else
+					  {
+						  pname=$(this).text();
+						  $("#account").html('<span>'+pname+'</span>');
+						  $('#productname').attr('value',pname);
+						  $('#pname').text(pname);
+						  $("#pimageDiv").show();
+						  $("#pimage").attr('src',baseurl+'assets/images/icon_S/'+$(this).attr('imgname')+'.png');
+					  }
 				  });
 			$('#email').keydown(function()
 			{

@@ -55,9 +55,10 @@
         	<div id="img_container" class="img_container">
           <!-- product drop down -->
 				<div class="dd_menu_contactpg">
-					<div class="dropdown"> <a id="account" class="account" > <span> <? if(isset($product_name)) { echo $product_name; } else { echo 'select product';} ?></span> </a>
+					<div class="dropdown"> <a id="account" class="account" > <span> <? if(isset($product_name)) { echo $product_name; } else { echo 'General Query';} ?></span> </a>
 						<div id="submenu" class="submenu" style="display: none; ">
 						<ul class="root">
+							<li > <a imgname="NULL" pid="NULL" class= "market" >General Query</a> </li>
 							<? foreach($product as $row) 
 							{
 							?>
@@ -70,12 +71,13 @@
           <!-- product drop down -->
         <?php /*?>  <p id="pname"><? if(isset($product_name)) { echo $product_name; } else { echo 'Product Name'; }?></p> <?php */?>     
                <? if(isset($product_name)) { ?>
+               <div class="center_bx1" id="pimageDiv">
                 <img id="pimage" src="<?=base_url('assets/images/icon_S').'/'.$product_image.'.png';?>" alt="" title="" width="260px" height="260px"/>
-                <?} else {?> 
-                <div class="center_bx1">
+                <?} else { ?> 
+                <div class="center_bx1" id="pimageDiv" style="display:none;" >
                  <img id="pimage" src="<?=base_url('assets/images/icon_S/default.png');?>" alt="" title="" width="260px" height="260px"/>
-                </div>
                 <? }?>
+                </div>
           </div>
         </div>
         <table>
