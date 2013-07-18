@@ -91,7 +91,7 @@
           <tr>
             <table>
               <tr>
-                <td id="captcha_img" class="captcha_img"></td><span id="getcaptcha">icon</span>
+                <td  class="captcha_img"><span id="captcha_img"></span><span id="getcaptcha" class="capt_reset"></span></td>
                
               </tr>
               <tr>
