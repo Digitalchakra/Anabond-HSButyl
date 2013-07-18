@@ -37,9 +37,10 @@
         </ul>
       
       <div class="srch" style="float:right; width:220px;">
+				
 				<script>
   (function() {
-    var cx = '002954699086083840021:hvsdssf2c7w';
+    var cx = '002954699086083840021:2ceblfh-9be';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
