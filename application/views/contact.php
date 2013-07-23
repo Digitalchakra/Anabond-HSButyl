@@ -97,7 +97,7 @@
               <tr>
                <td><input style="margin:-25px 0 0 0;" class="captcha_txt" type="text" id="txtInput" name="captcha"/></td>
               	<td><br />
-              		<p class="err" style='color:#FF0000; display:block; clear:both;  margin: 10px 0 0 -264px; float: left; font-size:13px !important;' id="captcha_err">
+              		<p class="err" style='color:#FF0000; display:block; clear:both;  margin: 29px 0 0 -264px; float: left; font-size:13px !important;' id="captcha_err">
                   <br />
                   </p><br />
               	</td>
