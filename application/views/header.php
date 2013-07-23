@@ -24,10 +24,10 @@
           	<ul>
             		<li class="const"><a href="<?=base_url('market/index/1');?>">Construction</a></li>
             		<li class="automobi"><a href="<?=base_url('market/index/2');?>">Automobile</a></li>
-            		<li class="widmill"><a href="#">Windmill</a></li>
-            		<li class="areosp"><a href="#">Aerospace</a></li>
-            		<li class="eleind"><a href="#">Electrical Industries</a></li>
-            		<li class="silos"><a href="#">Silos</a></li>
+            		<li class="widmill"><span>Windmill</span></li>
+            		<li class="areosp"><span href="#">Aerospace</span></li>
+            		<li class="eleind"><span href="#">Electrical Industries</span></li>
+            		<li class="silos"><span href="#">Silos</span></li>
             </ul>
           </li>
         	<li><a <? if($page =="product") echo 'class="active_link"'; ?> href="<?=base_url('product');?>">PRODUCTS</a></li>

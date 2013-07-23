@@ -10,23 +10,23 @@
           <tr>
             <th class="cont_txt1 " scope="row">Your Name</th>
             <td><input class="cont_txt2" type="text"/ name="name"><br />
-              <span class="err" style='color:#FF0000; font-size:11px;' id="name_err"></span></td>
+              <span class="err" id="name_err"></span></td>
           </tr>
           <tr>
             <th class="cont_txt1 " scope="row">Company Name</th>
             <td><input class="cont_txt2" type="text"/ name="company"><br />
-              <span class="err" style='color:#FF0000;  font-size:11px;' id="company_err"></span></td>
+              <span class="err" id="company_err"></span></td>
           </tr>
           <tr>
             <th class="cont_txt1 " scope="row">Phone Number</th>
             <td><input class="cont_txt2" type="text"/ name="phone"><br />
-              <span class="err" style='color:#FF0000;  font-size:11px;' id="phone_err"></span></td>
+              <span class="err" id="phone_err"></span></td>
           </tr>
           <tr>
             <th class="cont_txt1 " scope="row">Email Address*</th>
             <td><input class="cont_txt2" type="text"/ id="email" name="email">
               <br />
-              <span class="err" style='color:#FF0000;  font-size:11px;' id="email_err"></span></td>
+              <span class="err"id="email_err"></span></td>
           </tr>
         </table>
         <input id="productname" name="pname" type="hidden" value="<? if(isset($product_name)) { echo $product_name; }?>"> 
@@ -97,7 +97,7 @@
               <tr>
                <td><input style="margin:-25px 0 0 0;" class="captcha_txt" type="text" id="txtInput" name="captcha"/></td>
               	<td><br />
-              		<p class="err" style='color:#FF0000; display:block; clear:both;  margin: 10px 0 0 -264px; float: left; font-size:11px!important;' id="captcha_err">
+              		<p class="err" style='color:#FF0000; display:block; clear:both;  margin: 10px 0 0 -264px; float: left; font-size:13px !important;' id="captcha_err">
                   <br />
                   </p><br />
               	</td>
@@ -108,7 +108,7 @@
             <td><input id="contact_submit" class="sss_send_btn" type="button" value=""/></td>
           </tr>
         </table>
-        <p class="err" style='color:#72C34A;  font-size:11px;' id="msg_disp"></p>
+        <p class="err" style='color:#72C34A;  font-size:13px;' id="msg_disp"></p>
   </div>
   </form>    
   <div class="contnt_rit">

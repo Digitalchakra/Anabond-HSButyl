@@ -87,15 +87,15 @@
     	<h1 >Products</h1>       
 <!--		dropdown menu  -->
 			<div class="dd_menu">
-        <div class="dropdown"> <a id="account" class="account" > <span>Select Product</span> </a>
+        <div class="dropdown"> <a id="account" class="account" > <span>Select Market Segment</span> </a>
         	<div id="submenu" class="submenu" style="display: none; ">
             <ul class="root">
             <li > <a mid='1' class= "market" >Construction</a> </li>
             <li > <a mid='2' class= "market">Automobile</a> </li>
-            <li > <a mid='3' class= "">Windmill</a> </li>
-            <li> <a mid='4' class= "">Aerospace</a> </li>
-            <li> <a mid='5' class= "">Electrical Industries</a> </li>
-            <li> <a mid='6' class= "">Silos</a> </li>
+            <li > <span mid='3' class= "">Windmill</span> </li>
+            <li> <span mid='4' class= "">Aerospace</span> </li>
+            <li> <span mid='5' class= "">Electrical Industries</span> </li>
+            <li> <span mid='6' class= "">Silos</span> </li>
           </ul>
           </div>
       </div>

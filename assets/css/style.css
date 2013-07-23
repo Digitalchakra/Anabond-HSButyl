@@ -41,6 +41,8 @@ h1,h2{font-family: arialbd; font-size:30px; text-transform:uppercase;}
   .header ul li a:hover{color:#72c34a;}
 	.header ul li a:active {color:#72c34a;}
 	.header ul li .active_link{color:#72c34a;}
+	.header ul li span{cursor: default;}
+
  .header .srch{}
 
 .sosusmenu:hover ul { position:absolute; display: block; z-index:99999;}
@@ -349,7 +351,7 @@ display: none;
 
 }
 
-.dropdown  li a {
+.dropdown  li a, .dropdown li span {
    
     color: #000;
     display: block;
@@ -359,6 +361,10 @@ font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
 text-decoration:none;
 font-size:16px;
+}
+
+.dropdown li span {
+	cursor: default !important;
 }
 
 .dropdown li a:hover{
@@ -673,4 +679,16 @@ html ul.tabs li.active, html ul.tabs li.active a:hover  {
 
 .pro_lft p{
 		margin-bottom: 10px;
+}
+
+
+.err{
+	color:#FF0000;  
+	font-size:13px; 
+	font-family:Arial !important;
+}
+
+
+.err p{
+	font-size: 13px !important; 
 }

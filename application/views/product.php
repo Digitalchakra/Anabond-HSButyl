@@ -62,23 +62,23 @@
 		<span style="display:none" id="company_err"> </span>
           <input name="name" class="textbx" type="text" value="Name" onblur="if (this.value == '') {this.value = 'Name';}" onfocus="if (this.value == 'Name') {this.value = '';}" />
           <br />
-              <span class="err" style='color:#FF0000; font-size:11px;' id="name_err"></span>
+              <span class="err" id="name_err"></span>
           <input id="email" name="email" class="textbx or_top_margin" type="text" value="Email id" onblur="if (this.value == '') {this.value = 'Email id';}" onfocus="if (this.value == 'Email id') {this.value = '';}"/>
           <br />
-              <span class="err" style='color:#FF0000;  font-size:11px;' id="email_err"></span>
+              <span class="err" id="email_err"></span>
           
           <textarea name="message" value="Post Enquiry Here" onblur="if (this.value == '') {this.value = 'Post Enquiry Here';}" onfocus="if (this.value == 'Post Enquiry Here') {this.value = '';}"></textarea>
           <br />
-              <span class="err" style='color:#FF0000;' id="message_err"></span>
+              <span class="err" id="message_err"></span>
           <input id="productname" name="pname" type="hidden" value="<?=$product_first['name'];?>"> 
           <div class="captcha_img" id="captcha_img"></div><span class="cap_get" id="getcaptcha">&nbsp;</span>
           <div class="clearall"></div>
           <input class="captcha_txt" type="text" id="txtInput" name="captcha"/>
           <br />
-             <span class="err" style='color:#FF0000; display:block; clear:both; font-size:11px!important;' id="captcha_err"></span>
+             <span class="err" style='color:#FF0000; display:block; clear:both; font-size:13px!important;' id="captcha_err"></span>
           <input class="sss_post_btn" type="button" id="contact_submit" value="" />
           </form>
-          <span class="err" style='color:#72C34A;  font-size:11px;' id="msg_disp"></span>
+          <span class="err" style='color:#72C34A;  font-size:13px;' id="msg_disp"></span>
         </div>
       </div>
     </div>
