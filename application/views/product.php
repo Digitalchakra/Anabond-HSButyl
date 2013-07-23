@@ -67,7 +67,7 @@
           <br />
               <span class="err" style='color:#FF0000;  font-size:11px;' id="email_err"></span>
           
-          <textarea value="Post Enquiry Here" onblur="if (this.value == '') {this.value = 'Post Enquiry Here';}" onfocus="if (this.value == 'Post Enquiry Here') {this.value = '';}"></textarea>
+          <textarea name="message" value="Post Enquiry Here" onblur="if (this.value == '') {this.value = 'Post Enquiry Here';}" onfocus="if (this.value == 'Post Enquiry Here') {this.value = '';}"></textarea>
           <br />
               <span class="err" style='color:#FF0000;' id="message_err"></span>
           <input id="productname" name="pname" type="hidden" value="<?=$product_first['name'];?>"> 

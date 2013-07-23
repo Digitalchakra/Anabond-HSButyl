@@ -12,7 +12,7 @@ $(function() {
 	  {
 	  $("#submenu").toggle();   
 	  });
-	  $('#email').keydown(function()
+	/*  $('#email').keydown(function()
 			{
 				 var email = $('#email').val();
 				 if(email.length >1)
@@ -31,7 +31,7 @@ $(function() {
 						$('#email_err').html('');
 					}
 				});
-				
+				*/
 				$('#contact_submit').click(function()
 				{
 					//$('.err').html("");
