@@ -40,7 +40,7 @@
 				
 				<script>
   (function() {
-    var cx = '002954699086083840021:2ceblfh-9be';
+    var cx = '002954699086083840021:9wtmutqjbgs';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
