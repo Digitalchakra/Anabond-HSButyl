@@ -29,7 +29,7 @@ $(document).ready(function()
 						  $("#pimage").attr('src',baseurl+'assets/images/icon_S/'+$(this).attr('imgname')+'.png');
 					  }
 				  });
-			$('#email').keydown(function()
+			/*$('#email').keydown(function()
 			{
 				 var email = $('#email').val();
 				 if(email.length >1)
@@ -47,7 +47,7 @@ $(document).ready(function()
 					{
 						$('#email_err').html('');
 					}
-				});
+				});*/
 				
 				$('#contact_submit').click(function()
 				{
