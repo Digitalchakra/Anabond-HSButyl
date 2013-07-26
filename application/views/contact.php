@@ -39,9 +39,9 @@
             Tamilnadu, India<br />
             Pin: 600041<br />
           </p>
-          <p><span class="phone_img"> TelePhone Number: +91-44-2346 0041/42/43</span><br />
+          <p><span class="phone_img"> Telephone Number: +91-44-2346 0041/42/43</span><br />
             <span class="fax_img">Fax Number: +91-44-2346 0048</span><br />
-            <span class="mail_img"> <a href="mailto:marketing@anabodhsbutyl.com">marketing@anabodhsbutyl.com</a></span> </p>
+            <span class="mail_img"> <a href="mailto:marketing@anabondhsbutyl.com">marketing@anabodhsbutyl.com</a></span> </p>
         </div>
       </div>
     </div>
