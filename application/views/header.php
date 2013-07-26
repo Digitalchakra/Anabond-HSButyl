@@ -14,9 +14,6 @@
 </head>
 
 <body>
-  <div class="all_in">
-    
-  
 	<div class="wrapper">
   	<div class="header">
 		<? $page = $this->uri->segment(1); ?>

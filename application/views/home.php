@@ -61,7 +61,7 @@
 				</div>
 				<div class="slide_2">
 					<br/>
-					<h2>HS Butyl Enters Indian Market Throught A  Joint Venture With Anabond</h2>
+					<h2>HS Butyl Enters Indian Market Through A  Joint Venture With Anabond</h2>
 					<p><b>The Automotive Horizon</b></p>
 					<p>CHENNAI<br/>UK-based HS Butyl Ltd, a specialist in industrial adhesives, has entered the Indian market through a joint venture with Anabond India. The joint venture, Anabond HS Butyl Pvt Ltd, will manufacture butyl tapes, which find application in the automotive, prefab construction, aviation and energy sectors. </p>
 				<div class="clearall"></div>
@@ -168,9 +168,9 @@
           Tamilnadu, India<br />
           Pin: 600041<br />
         </p>
-        <p><span class="phone_img"> TelePhone Number: +91-44-2346 0041/42/43</span><br />
+        <p><span class="phone_img"> Telephone Number: +91-44-2346 0041/42/43</span><br />
         		<span class="fax_img">Fax Number: +91-44-2346 0048</span><br />
-           <span class="mail_img"> <a href="mailto:marketing@anabodhsbutyl.com">marketing@anabodhsbutyl.com</a></span>
+           <span class="mail_img"> <a href="mailto:marketing@anabodhsbutyl.com">marketing@anabondhsbutyl.com</a></span>
         </p>
       </div>
       <div class="contact_rit">

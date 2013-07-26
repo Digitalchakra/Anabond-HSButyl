@@ -60,7 +60,7 @@ class Contact extends CI_Controller {
 					if($result)
 					{
 						$data['success']=1;
-						$data['msg']='Thank you, we will get back to you shortly.';
+						$data['msg']='Thank you, will get back to you shortly !';
 
 						//Mail Configuration
 						$this->load->library('email');
