@@ -141,5 +141,10 @@
   </div>
   <div class="clearall"></div>
 </div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 	 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="<?=base_url('assets/js/product.js');?>"></script>

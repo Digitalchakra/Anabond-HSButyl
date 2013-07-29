@@ -99,7 +99,7 @@ border: none; width:127px; padding:0 0 0 25px;}
 .abt .abt_cnt{margin:10px 10px 0 20px;}
 .abt .abt_cnt p{padding:5px 0;}
 
-.contact{width:1020px;  height:348px; margin:0 auto; padding: 10px 0 80px 0;}
+.contact{width:1020px;  height:443px; margin:0 auto; padding: 10px 0 80px 0;}
 .contact_lft{margin:10px;  float:left; padding:30px 10px 20px 0px;}
 
 .contact_lft h1{font-size:24px; }
@@ -141,7 +141,7 @@ border: none; width:127px; padding:0 0 0 25px;}
 .product_pg h1{padding:10px 10px; margin:35px 0 10px 1px; font-size:24px; }
 .product_pg h2{padding:10px 10px; margin:30px 0 10px 1px; font-size:24px; }
 .product_pg .pg2_cnt1{margin:10px 10px 0 13px;}
-.pg2_container{padding:10px 10px; display:block; min-height:360px;}
+.pg2_container{padding:10px 10px; display:block; min-height:360px; }
 .slider_box{width:242px; height:300px;  float:left; margin:0 3px;}
 .slider_box p{padding:10px 0; text-align:center; width:92%; font-weight:bold;}
 .slider_box .slider_bx1{width:209px; height:208px;border: 1px solid #e9e8e8;}
@@ -702,7 +702,7 @@ html, body {
    min-height: 100%;
    height: auto !important;
    height: 100%;
-   margin: 0 auto -73px; /* the bottom margin is the negative value of the footer's height */
+   margin: 0 auto -78px; /* the bottom margin is the negative value of the footer's height */
 }
 .footer, .push {
     height: 73px; /* .push must be the same height as .footer */
@@ -710,6 +710,3 @@ html, body {
 }
 
 
-.footer{
-    margin-top: 100px;
- }
