@@ -11,6 +11,10 @@
     <script type="text/javascript">
    var baseurl = "<?php print base_url(); ?>";
   </script>
+  <style>
+  .gsc-input{background:none !important}
+  .gcsc-branding{display:none;}
+  </style>
 </head>
 
 <body>
