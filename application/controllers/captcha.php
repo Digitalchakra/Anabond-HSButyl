@@ -14,15 +14,15 @@ class Captcha extends CI_Controller {
 	 }
 	public function index()
 	{
-			$words = file("./captcha_txt/google_captcha.txt"); 
-			$word = trim($words[rand(0, count($words) - 1)])." ".rand(0,999);
+			//$words = file("./captcha_txt/google_captcha.txt"); 
+			$word = rand(0,9999);
 			$vals = array(
 					'img_path' => './tmp/captcha/',
 					'word' =>$word,
 					'img_url' => base_url().'tmp/captcha/',
 					'font_path' =>'./assets/fonts/arialbd.ttf',
 					'expiration' => '3600',
-					'img_width' => '210'
+					'img_width' => '100'
 					);
 
 				$data['captcha'] = create_captcha($vals);
