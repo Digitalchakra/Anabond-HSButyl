@@ -238,7 +238,7 @@ border: 1px solid #D4D0D0; -webkit-box-shadow: 0 8px 6px -6px #626262; -moz-box-
 .icon_box_bg:last-child{border:none;}
 /************************************** R&D  *************************************************/
 
-.randd_mheit {min-height:1200px;}
+.randd_mheit {min-height:1250px;}
 .randd h1{line-height:34px;}
 .randd span{text-transform:none!important;}
 .randd span a{color:#000; font-weight: bold;}
@@ -257,7 +257,7 @@ border: 1px solid #D4D0D0; -webkit-box-shadow: 0 8px 6px -6px #626262; -moz-box-
 
 .product_pg .abt_lft{width:30%; float:left; min-height:75%; margin: 0 0 0 12px;}
 .product_pg .abt_lft img{margin:10px 20px 0 0;}
-.product_pg .abt_rit{width:62%; float:right;}
+.product_pg .abt_rit{width:62%; float:right; min-height:580px;}
 .product_pg .abt_rit p{padding:0 0 20px 0; margin:5px 0;}
 .product_pg .abt_rit p a{color:#72c34a;}
 .product_pg .abt_rit p a:hover{text-decoration:underline;}
