@@ -59,10 +59,12 @@ $(function() {
 						{
 							$('#msg_disp').text(result.resultset.msg);
 						}
+						getcaptcha();
 					},
 					error: function()
 					{
 						$('#msg_disp').text('Intenal error, try again !');
+						getcaptcha();
 					}
 					});
 					
