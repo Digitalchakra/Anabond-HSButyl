@@ -115,7 +115,7 @@
           <input name="name" class="textbx" type="text" value="Name" onblur="if (this.value == '') {this.value = 'Name';}" onfocus="if (this.value == 'Name') {this.value = '';}" />
           <br />
               <span class="err" id="name_err"></span>
-          <input id="email" name="email" class="textbx or_top_margin" type="text" value="Email id" onblur="if (this.value == '') {this.value = 'Email id';}" onfocus="if (this.value == 'Email id') {this.value = '';}"/>
+          <input id="email" name="email" class="textbx or_top_margin" type="text" value="Email/Phone Number" onblur="if (this.value == '') {this.value = 'Enter Email or Phone Number';}" onfocus="if (this.value == 'Enter Email or Phone Number') {this.value = '';}"/>
           <br />
               <span class="err" id="email_err"></span>
           

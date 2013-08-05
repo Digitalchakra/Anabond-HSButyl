@@ -41,7 +41,7 @@
               <span class="err"id="email_err"></span></td>
           </tr>
         </table>
-        <input id="productname" name="pname" type="hidden" value="<? if(isset($product_name)) { echo $product_name; }?>"> 
+        <input id="productname" name="pname" type="hidden" value="<? if(isset($product_name)) { echo $product_name; } else { echo 'General Enquiry'; }?>"> 
       </div>
       <div class="cnt_rit ">
         <div class="connt_lft">

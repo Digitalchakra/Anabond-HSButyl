@@ -23,8 +23,8 @@ class Contact extends CI_Controller {
 		if(isset($_POST['submit_feedback']))
 		{
 				$this->form_validation->set_rules('name', 'Name', 'trim|max_length[30]|min_length[3]');
-				$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|max_length[100]');
-				$this->form_validation->set_rules('phone', 'Phone', 'trim|max_length[17]|callback_phone_check');
+				$this->form_validation->set_rules('email', 'Email/Phone', 'trim|required|max_length[100]');
+				//$this->form_validation->set_rules('phone', 'Phone', 'trim|max_length[17]|callback_phone_check');
 				$this->form_validation->set_rules('company', 'Company', 'trim|max_length[100]');
 				$this->form_validation->set_rules('message', 'Message', 'trim|max_length[1000]');
 				$this->form_validation->set_rules('captcha', "Captcha", 'required|callback_captcha_check');
@@ -32,7 +32,7 @@ class Contact extends CI_Controller {
 				{
 					$err['name'] = form_error('name');
 					$err['email'] = form_error('email');
-					$err['phone'] = form_error('phone');
+					//$err['phone'] = form_error('phone');
 					$err['company'] = form_error('company');
 					$err['message'] = form_error('message');
 					$err['captcha'] = form_error('captcha');
@@ -43,7 +43,7 @@ class Contact extends CI_Controller {
 					$data['success']=0;
 					$name=$this->input->post('name');
 					$email=$this->input->post('email');
-					$phone=$this->input->post('phone');
+					//$phone=$this->input->post('phone');
 					$company=$this->input->post('company');
 					$message=$this->input->post('message');
 					$product=$this->input->post('pname');
@@ -51,7 +51,7 @@ class Contact extends CI_Controller {
 					$values=array(
 						'name' => $name,
 						'email' => $email,
-						'phone' => $phone,
+						//'phone' => $phone,
 						'company' => $company,
 						'message' => $message,
 						'product' => $product
@@ -83,8 +83,7 @@ class Contact extends CI_Controller {
 						<br />New feedback submitted on Hsbutyl.<br />
 						<br />Feedback Details:<br />
 						Name: '.$name.'<br />
-						Phone: '.$phone.'<br />
-						Email: '.$email.'<br />
+						Email / Phone: '.$email.'<br />
 						Company: '.$company.'<br />
 						Product: '.$product.'<br />
 						Message: '.$message.'<br /><br />Regards<br />Digitalchakra Team';

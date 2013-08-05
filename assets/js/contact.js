@@ -15,7 +15,7 @@ $(document).ready(function()
 					  if($(this).attr('pid')=='NULL')
 					  {
 						  $("#account").html('<span>General Enquiry</span>');
-						  $('#productname').attr('value','NULL');
+						  $('#productname').attr('value','General Enquiry');
 						  $('#pname').text('');
 						  $("#pimageDiv").hide();
 					  }
@@ -75,10 +75,12 @@ $(document).ready(function()
 						{
 							$('#msg_disp').text(result.resultset.msg);
 						}
+						getcaptcha();
 					},
 					error: function()
 					{
 						$('#msg_disp').text('Intenal error, try again !');
+						getcaptcha();
 					}
 					});
 					
