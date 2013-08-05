@@ -728,5 +728,8 @@ html, body {
     height: 73px; /* .push must be the same height as .footer */
 
 }
+.market_hover{
 
-
+ background: url("../images/tab_highlight.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+  }

@@ -9,7 +9,7 @@
           <div class="foot_lft">
           
           <p>
-          &copy; Copyright <?=date('Y');?> &nbsp;|&nbsp;&nbsp;<a href="http://www.anabond.com" target="_blank">Anabond</a>&nbsp;<a href="http://www.hsbutyl.com" target="_blank">HSButyl</a>|&nbsp;&nbsp;All Rights Reserved&nbsp;&nbsp;|&nbsp; <a href="#">Privacy Policy</a></p>
+          &copy; Copyright <?=date('Y');?> &nbsp;|&nbsp;&nbsp;<a href="http://www.anabond.com" target="_blank">Anabond</a>&nbsp;<a href="http://www.hsbutyl.com" target="_blank">HSButyl</a>|&nbsp;&nbsp;All Rights Reserved&nbsp;&nbsp;|&nbsp; <a href="#">Privacy Policy</a>&nbsp;|&nbsp;&nbsp;<a href="#">Disclaimer</a></p>
           </div>
       </div>
       </div>

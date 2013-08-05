@@ -2,20 +2,23 @@
 <!--<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" /> -->
 
 
+<? $page = $this->uri->segment(1); $mid = $this->uri->segment(3);?>
 
 <!-- product -->
 <div class="product_pg">
 <!-- product icon -->
 	<div class="icon_conainer">
-  	<div class="icon_box_bg">
-    <div class="icon_box_p">   
+		
+		<? if($page =="market"){ ?>
+  	<div class="icon_box_bg" onclick="window.location.href = '<?=base_url('market/index/1');?>';">
+    <div class="icon_box_p <? if($mid==1) { echo ' market_hover';}?>">   
       <div class="icon_box1">      
       </div>
       <p>Construction</p>    
     </div>
     </div>
-  	<div class="icon_box_bg">
-    <div class="icon_box_p">   
+  	<div class="icon_box_bg" onclick="window.location.href = '<?=base_url('market/index/2');?>';">
+    <div class="icon_box_p <? if($mid==2) { echo ' market_hover';}?>">   
       <div class="icon_box2">      
       </div>
       <p>Automobile</p>    
@@ -52,6 +55,8 @@
     </div>
     
   </div>
+  
+<? } ?>
 <div class="clearall"></div>
 
 <!-- end product icon -->
@@ -115,7 +120,7 @@
           <input name="name" class="textbx" type="text" value="Name" onblur="if (this.value == '') {this.value = 'Name';}" onfocus="if (this.value == 'Name') {this.value = '';}" />
           <br />
               <span class="err" id="name_err"></span>
-          <input id="email" name="email" class="textbx or_top_margin" type="text" value="Email/Phone Number" onblur="if (this.value == '') {this.value = 'Enter Email or Phone Number';}" onfocus="if (this.value == 'Enter Email or Phone Number') {this.value = '';}"/>
+          <input id="email" name="email" class="textbx or_top_margin" type="text" value="Enter Email or Phone Number" onblur="if (this.value == '') {this.value = 'Enter Email or Phone Number';}" onfocus="if (this.value == 'Enter Email or Phone Number') {this.value = '';}"/>
           <br />
               <span class="err" id="email_err"></span>
           
