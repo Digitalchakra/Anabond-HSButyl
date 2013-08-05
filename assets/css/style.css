@@ -46,18 +46,18 @@ h1,h2{font-family: arialbd; font-size:30px; text-transform:uppercase;}
  .header .srch{}
 
 .sosusmenu:hover ul { position:absolute; display: block; z-index:99999;}
-.sosusmenu ul li{display:block; float:none !important; padding:8px 38px; border-bottom:1px solid #e1e1e1;}
-.sosusmenu .const{ background:url(../images/sprite.png) -7px -487px  no-repeat;}
-.sosusmenu .automobi{ background:url(../images/sprite.png) -7px -447px  no-repeat;}
-.sosusmenu .widmill{ background:url(../images/sprite.png) -7px -526px  no-repeat;}
-.sosusmenu .areosp{ background:url(../images/sprite.png) -7px -566px  no-repeat;}
-.sosusmenu .eleind{ background:url(../images/sprite.png) -7px -606px  no-repeat;}
-.sosusmenu .silos{background:url(../images/sprite.png) -7px -647px  no-repeat;}
+.sosusmenu ul li{display:block; float:none !important; padding:11px 54px; border-bottom:1px solid #98BE86;}
+.sosusmenu .const{ background:url(../images/sprite.png) -7px -480px   no-repeat;}
+.sosusmenu .automobi{ background:url(../images/sprite.png) -7px -440px  no-repeat;}
+.sosusmenu .widmill{ background:url(../images/sprite.png) -7px -520px  no-repeat;}
+.sosusmenu .areosp{ background:url(../images/sprite.png) -7px -560px  no-repeat;}
+.sosusmenu .eleind{ background:url(../images/sprite.png) -7px -600px  no-repeat;}
+.sosusmenu .silos{background:url(../images/sprite.png) -7px -641px  no-repeat;}
 .sosusmenu ul {
     top: 38px;
     display: none;
     list-style-type: none;
-		background:#f4f4f4; border:1px solid #e1e1e1;
+		background:#D8F0CD; border:1px solid #98BE86;
 }​
 
 
@@ -111,7 +111,7 @@ border: none; width:127px; padding:0 0 0 25px;}
 .contact_lft p{padding:0 0 10px 10px; font-size: 14px;}
 .contact_lft p span{font-size:18px; line-height:28px;}
 .contact_lft a{color:#000;}
-.contact_lft p .phone_img{background: url(../images/sprite.png) 0px -680px  no-repeat; padding:7px 0 7px 38px; font-size: 14px;  line-height: 36px;}
+.contact_lft p .phone_img{background: url(../images/sprite.png) 0px -681px  no-repeat; padding:7px 0 7px 38px; font-size: 14px;  line-height: 36px;}
 .contact_lft p .fax_img{background: url(../images/sprite.png) 0px -762px  no-repeat; padding:7px 0 7px 38px; font-size: 14px; line-height: 26px;}
 .contact_lft p .mail_img{background: url(../images/sprite.png) 0px -735px  no-repeat; padding:7px 0 7px 38px; font-size: 14px;  line-height: 36px;}
 .contact_rit{float:right; width:537px; height:315px; border:1px solid #e9e8e8; margin:41px 10px 20px 10px;}
@@ -127,10 +127,10 @@ border: none; width:127px; padding:0 0 0 25px;}
 .connt_lft p{padding:0 0 10px 0px; line-height: 22px; font-size: 14px;}
 .connt_lft p span{font-size:18px; line-height:28px;}
 .connt_lft a{color:#000;}
-.connt_lft p .phone_img{background: url(../images/sprite.png) 0px -680px  no-repeat; padding:7px 0 7px 38px; font-size: 14px;  line-height: 36px;}
+.connt_lft p .phone_img{background: url(../images/sprite.png) 0px -681px  no-repeat; padding:7px 0 7px 38px; font-size: 14px;  line-height: 36px;}
 .connt_lft p .fax_img{background: url(../images/sprite.png) 0px -762px  no-repeat; padding:7px 0 7px 38px; font-size: 14px; line-height: 26px;}
 .connt_lft p .mail_img{background: url(../images/sprite.png) 0px -735px  no-repeat; padding:7px 0 7px 38px; font-size: 14px;  line-height: 36px;}
-.contnt_rit{float:right; width:477px; height:315px; border:1px solid #e9e8e8; margin:80px 10px 20px 10px;}
+.contnt_rit{float:right; width:507px; height:315px; border:1px solid #e9e8e8; margin:-10px 0px 20px 10px;}
 .img_container p{text-align:center; width: 65%;}
 
 .contact_cnt_cnt p{font-size:11px!important;}
@@ -154,7 +154,7 @@ border: none; width:127px; padding:0 0 0 25px;}
 .rit_box ul{margin:10px 0;}
 .rit_box li{background:url(../images/bul.png) 0px 8px no-repeat; padding:5px 20px;}
 .rit_box p{margin:10px 0; font-size:12px;}
-.rit_box .img1{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) -11px -450px no-repeat; float:left; margin:0px 10px 2px 0px;}
+.rit_box .img1{width:39px; height:39px; padding:0px 0; background:url(../images/sprite.png) -11px -442px no-repeat; float:left; margin:0px 10px 2px 0px;}
 .rit_box .img2{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) -11px -490px no-repeat; float:left; margin:0px 10px 2px 0px;}
 .rit_box .img3{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) -11px -450px no-repeat; float:left; margin:0px 10px 2px 0px;}
 .rit_box .img4{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) -11px -450px no-repeat; float:left; margin:0 10px 0 0px;}
@@ -168,7 +168,7 @@ border: none; width:127px; padding:0 0 0 25px;}
 .rit_box .electric_img{width:29px; height:29px; padding:0px 0; background:url(../images/sprite.png) -11px -490px no-repeat; float:left; margin:0 10px 0 0px;}
 
 
-.rit_box div p{padding:4px 0 4px 0;}
+.rit_box div p{padding:9px 0 4px 0;}
 
 
 .product_container2 {width:1020px;  margin:0 auto; padding:30px 0 30px 0;}
@@ -222,16 +222,35 @@ width: 262px;
 height: 264px;
 border: 1px solid #D4D0D0; -webkit-box-shadow: 0 8px 6px -6px #626262; -moz-box-shadow: 0 8px 6px -6px #626262; box-shadow: 0 8px 6px -6px #626262; }
 
+.icon_conainer {margin:0 0 0 114px;}
+.icon_box_p{/*width: 135px;*/ width:100px; height:128px; float:left; text-align:center; /*background: #72c34a;*/  margin:0 0 0 10px;}
+.product_pg .icon_conainer .icon_box1{/*width:42px; height:42px;*/ width:100%; height:62%; float:left; background:url(../images/Construction_2.png) 50% 12px no-repeat;}
+.product_pg .icon_conainer .icon_box2{/*width:42px; height:42px;*/ width:100%; height:62%; float:left; background:url(../images/Automobile.png) 50% 12px no-repeat;}
+.product_pg .icon_conainer .icon_box3{/*width:42px; height:42px;*/ width:100%; height:62%; float:left; background:url(../images/Windmill.png) 50% 12px no-repeat}
+.product_pg .icon_conainer .icon_box4{/*width:42px; height:42px;*/ width:100%; height:62%; float:left; background:url(../images/Aerospace.png) 50% 12px no-repeat}
+.product_pg .icon_conainer .icon_box5{/*width:42px; height:42px;*/ width:100%; height:62%; float:left; background:url(../images/Electrical.png) 50% 12px no-repeat}
+.product_pg .icon_conainer .icon_box6{/*width:42px; height:42px;*/ width:100%; height:62%; float:left; background:url(../images/Silos.png) 50% 12px no-repeat}
+.icon_box_p p{padding:68px 0; font-size:12px; line-height:16px;}
+
+.icon_box_bg{width: 120px; height: 110px; border-right:1px solid #72c34a; float: left; margin:0 0 0 10px;}
+.icon_box_p:hover{ background:url(../images/tab_highlight.png)no-repeat; cursor:pointer;}
+
+.icon_box_bg:last-child{border:none;}
 /************************************** R&D  *************************************************/
+
+.randd_mheit {min-height:1200px;}
 .randd h1{line-height:34px;}
 .randd span{text-transform:none!important;}
 .randd span a{color:#000; font-weight: bold;}
 .randd span a:hover{color:#72c34a;}
-.product_pg{width:1020px;  margin:0 auto; padding:30px 0 0px 0; }
+.randd .aln_rit a{float:right; color:#72c34a; font-size:18px;}
+.randd .aln_rit a:hover{text-decoration:underline;}
+.product_pg{width:1020px; margin:0 auto; padding:30px 0 0px 0; }
 .product_pg h3{margin:25px 0 20px 20px; font-size:18px;}
 .product_pg ul{margin:20px 0;}
 .product_pg .rand_li{background:url(../images/bul.png) no-repeat 10px 3px; padding:0 0 0 40px; margin:0 0 0 25px;}
 .product_pg .padding_lft{margin:0px 0 0px 20px;}
+.product_pg .randd_img{width:100%; height:550px; background:url(../images/anabond_rd_img.jpg) no-repeat center; margin:30px;}
 
 /************************************** About  *************************************************/
 
@@ -245,12 +264,12 @@ border: 1px solid #D4D0D0; -webkit-box-shadow: 0 8px 6px -6px #626262; -moz-box-
 /************************************** contact  *************************************************/
 
 .product_pg .contact_pg{ margin:0 0 30px 0;}
-.contact_pg .cnt_lft{width:50%; float:left;}
+.contact_pg .cnt_lft{width:40%; float:left;}
 .contact_pg .cnt_lft .cont_txt1{width:150px;  padding:10px 11px; text-align:left;}
-.contact_pg .cnt_lft .cont_txt2{width:250px; }
+.contact_pg .cnt_lft .cont_txt2{width:250px; margin:0 0 0 12px;}
 .contact_pg .cnt_lft .cont_sel1{width:255px;}
 
-.contact_pg .cnt_rit{width:48%; float:right;}
+.contact_pg .cnt_rit{width:50%; float:right;}
 .contact_pg .cnt_rit .cont_txt3{padding:10px 0px;}
 .cont_txt4{ width:411px; height:107px; margin:10px 0 0 2px; resize:none;}
 
@@ -274,6 +293,7 @@ border: 1px solid #D4D0D0; -webkit-box-shadow: 0 8px 6px -6px #626262; -moz-box-
 
 .capt_reset{background:url(../images/reset icon.png) 0px 0px no-repeat; width:40px; height:40px;}
 
+#email_err p{margin: 5px 12px;}
 
 /*************************************** search **********************************************************/
 

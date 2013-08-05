@@ -8,16 +8,20 @@
       <div class="cnt_lft">
         <table  border="5">
           <tr>
-            <th class="cont_txt1 " scope="row">Your Name</th>
-            <td><input class="cont_txt2" type="text"/ name="name"><br />
+            <td class="cont_txt1 " scope="row">Your Name</td>
+           </tr>
+           <tr>
+            <td><input class="cont_txt2" type="text"/ name="name" placeholder="Name"><br />
               <span class="err" id="name_err"></span></td>
           </tr>
           <tr>
-            <th class="cont_txt1 " scope="row">Company Name</th>
-            <td><input class="cont_txt2" type="text"/ name="company"><br />
-              <span class="err" id="company_err"></span></td>
+            <td class="cont_txt1 " scope="row">Company Name</td>
           </tr>
           <tr>
+            <td><input class="cont_txt2" type="text"/ name="company" placeholder="Company Name"><br />
+              <span class="err" id="company_err"></span></td>
+          </tr>
+<!--          <tr>
             <th class="cont_txt1 " scope="row">Phone Number</th>
             <td><input class="cont_txt2" type="text"/ name="phone"><br />
               <span class="err" id="phone_err"></span></td>
@@ -25,6 +29,14 @@
           <tr>
             <th class="cont_txt1 " scope="row">Email Address*</th>
             <td><input class="cont_txt2" type="text"/ id="email" name="email">
+              <br />
+              <span class="err"id="email_err"></span></td>
+          </tr>-->
+          <tr>
+            <td class="cont_txt1 " scope="row">Email/Phone Number *</td>
+          </tr>
+          <tr>
+            <td><input class="cont_txt2" type="text"/ id="email" name="email" placeholder="Enter Email or Phone Number">
               <br />
               <span class="err"id="email_err"></span></td>
           </tr>
@@ -111,10 +123,9 @@
   </div>
   </form>    
   <div class="contnt_rit">
-    <iframe width="477" height="315" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Anabond+Adhesives+%26+Sealants,+Phase+II,+Tharamani,+Chennai,+Tamil+Nadu&amp;aq=0&amp;oq=Anabond+Adhesives+%26+Sealants+&amp;sll=12.978621,80.249773&amp;sspn=0.004595,0.008256&amp;ie=UTF8&amp;hq=Anabond+Adhesives+%26+Sealants,&amp;hnear=Phase+II,+Tharamani,+Chennai,+Tamil+Nadu&amp;t=m&amp;ll=12.97861,80.249784&amp;spn=0.006586,0.011072&amp;z=16&amp;iwloc=A&amp;output=embed"></iframe>
-    <br />
-    <small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Anabond+Adhesives+%26+Sealants,+Phase+II,+Tharamani,+Chennai,+Tamil+Nadu&amp;aq=0&amp;oq=Anabond+Adhesives+%26+Sealants+&amp;sll=12.978621,80.249773&amp;sspn=0.004595,0.008256&amp;ie=UTF8&amp;hq=Anabond+Adhesives+%26+Sealants,&amp;hnear=Phase+II,+Tharamani,+Chennai,+Tamil+Nadu&amp;t=m&amp;ll=12.97861,80.249784&amp;spn=0.006586,0.011072&amp;z=16&amp;iwloc=A" style="color:#0000FF;text-align:left" target="_blank">View Larger Map</a></small> 
-    </div>
+      <iframe width="507" height="330" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Anabond+Adhesives+%26+Sealants,+Phase+II,+Tharamani,+Chennai,+Tamil+Nadu&amp;aq=0&amp;oq=Anabond+Adhesives+%26+Sealants+&amp;sll=12.978621,80.249773&amp;sspn=0.004595,0.008256&amp;ie=UTF8&amp;hq=Anabond+Adhesives+%26+Sealants,&amp;hnear=Phase+II,+Tharamani,+Chennai,+Tamil+Nadu&amp;t=m&amp;cid=11033483246055038958&amp;ll=12.978631,80.249805&amp;spn=0.027601,0.04343&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+      <br /><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Anabond+Adhesives+%26+Sealants,+Phase+II,+Tharamani,+Chennai,+Tamil+Nadu&amp;aq=0&amp;oq=Anabond+Adhesives+%26+Sealants+&amp;sll=12.978621,80.249773&amp;sspn=0.004595,0.008256&amp;ie=UTF8&amp;hq=Anabond+Adhesives+%26+Sealants,&amp;hnear=Phase+II,+Tharamani,+Chennai,+Tamil+Nadu&amp;t=m&amp;cid=11033483246055038958&amp;ll=12.978631,80.249805&amp;spn=0.027601,0.04343&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left" target="_blank">View Larger Map</a></small>
+ </div>
 </div>
 <div class="clearall"></div>
 <script src="<?=base_url('assets/js/contact.js');?>"></script>

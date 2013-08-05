@@ -1,8 +1,60 @@
 <link rel="stylesheet" href="<?=base_url('assets/css/font-awesome.min.css');?>">
 <!--<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" /> -->
 
+
+
 <!-- product -->
 <div class="product_pg">
+<!-- product icon -->
+	<div class="icon_conainer">
+  	<div class="icon_box_bg">
+    <div class="icon_box_p">   
+      <div class="icon_box1">      
+      </div>
+      <p>Construction</p>    
+    </div>
+    </div>
+  	<div class="icon_box_bg">
+    <div class="icon_box_p">   
+      <div class="icon_box2">      
+      </div>
+      <p>Automobile</p>    
+    </div>
+    </div>
+  	<div class="icon_box_bg">
+    <div class="icon_box_p">    
+      <div class="icon_box3">      
+      </div>
+      <p>Windmill</p>    
+    </div>
+    </div>
+  	<div class="icon_box_bg">
+    <div class="icon_box_p">    
+      <div class="icon_box4">      
+      </div>
+      <p>Aerospace</p>    
+    </div>
+    </div>
+    
+  	<div class="icon_box_bg">
+    <div class="icon_box_p">    
+      <div class="icon_box5">      
+      </div>
+      <p>Electrical Industries</p>    
+    </div>
+      </div>
+  	<div class="icon_box_bg">
+    <div class="icon_box_p">    
+      <div class="icon_box6">      
+      </div>
+      <p>Silos</p>    
+    </div>
+    </div>
+    
+  </div>
+<div class="clearall"></div>
+
+<!-- end product icon -->
   <h1><?=$product_head['name']?></h1>
   <p class="pg2_cnt1">HS Butyl are pleased to announce a new butyl tape to their comprehensive range of butyl tapes.Our new 0800 product has been designed for use within the Vehicle Construction Sector.HS Butyl are pleased to announce a new butyl tape to their comprehensive range of butyl tapes. </p>
   <br /><br /><br />
@@ -115,7 +167,7 @@
 		  <ul class="tabs">
 			<li><a href="#tab1">Product Description</a></li>
 			<li><a href="#tab2">Technical Information</a></li>
-			<li class="dwnld"><a href="#tab3"><span class="icon_dld"></span>Download</a></li>
+		<!--	<li class="dwnld"><a href="#tab3"><span class="icon_dld"></span>Download</a></li>-->
 		  </ul>
 		  <div class="tab_container">
 			<div id="tab1" class="tab_content">
@@ -128,9 +180,9 @@
 			  <p class="bulll">0303 is a general purpose butyl tape.</p>
 			  <p class="bulll">Product uses</p>
 			</div>
-			<div id="tab3" class="tab_content">
+<!--			<div id="tab3" class="tab_content">
 				<a class="dwld_btn">Download PDF</a>
-			</div>
+			</div>-->
 		  </div>
 		  <!--<span class="sss_download"></span>-->
 		</div>
