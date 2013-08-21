@@ -172,7 +172,6 @@
 		  <ul class="tabs">
 			<li><a href="#tab1">Product Description</a></li>
 			<!--<li><a href="#tab2">Technical Information</a></li>-->
-			<li><a>Technical Information</a></li>
 		<!--	<li class="dwnld"><a href="#tab3"><span class="icon_dld"></span>Download</a></li>-->
 		  </ul>
 		  <div class="tab_container">
