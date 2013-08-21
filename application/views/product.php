@@ -171,7 +171,8 @@
         <div id="tabs" class="container">
 		  <ul class="tabs">
 			<li><a href="#tab1">Product Description</a></li>
-			<li><a href="#tab2">Technical Information</a></li>
+			<!--<li><a href="#tab2">Technical Information</a></li>-->
+			<li><a>Technical Information</a></li>
 		<!--	<li class="dwnld"><a href="#tab3"><span class="icon_dld"></span>Download</a></li>-->
 		  </ul>
 		  <div class="tab_container">
@@ -181,10 +182,10 @@
 			  <p class="bulll">For use as an air, dust or water seal for compression joints and seams.</p>
 			  <p class="bulll">For Water sealing applications in vechicle construction.</p>
 			</div>
-			<div id="tab2" class="tab_content">
+			<!--<div id="tab2" class="tab_content">
 			  <p class="bulll">0303 is a general purpose butyl tape.</p>
 			  <p class="bulll">Product uses</p>
-			</div>
+			</div>-->
 <!--			<div id="tab3" class="tab_content">
 				<a class="dwld_btn">Download PDF</a>
 			</div>-->
