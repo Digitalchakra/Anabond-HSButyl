@@ -23,7 +23,7 @@
 				
 
 				<div class="slide_1">
-					<img class="slider_img" src="<?=base_url('assets/images/slider1.png');?>">
+					<img class="slider_img" src="<?=base_url('assets/images/slider2.png');?>">
 				</div>
         				<div class="slide_2">
 					<br/>
@@ -43,7 +43,7 @@
 		</div><div class="touchslider-item ">
 			<div class="slider_item">
 				<div class="slide_1">
-					<img class="slider_img" src="<?=base_url('assets/images/slider1.png');?>">
+					<img class="slider_img" src="<?=base_url('assets/images/slider3.png');?>">
 				</div>
 				<div class="slide_2">
 					<br/>
@@ -57,7 +57,7 @@
 		</div><div class="touchslider-item ">
 			<div class="slider_item">
 				<div class="slide_1">
-					<img class="slider_img" src="<?=base_url('assets/images/slider1.png');?>">
+					<img class="slider_img" src="<?=base_url('assets/images/slider4.png');?>">
 				</div>
 				<div class="slide_2">
 					<br/>
