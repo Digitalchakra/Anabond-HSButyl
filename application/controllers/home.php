@@ -14,7 +14,7 @@ class Home extends CI_Controller {
 	public function index()
 	{
 		$this->load->model('product_model');
-		$data['product']=$this->product_model->get_products(1);
+		$data['product']=$this->product_model->get_products();
 		$data['view_page'] = 'home';
 		$this->load->view('template', $data);
 	}
