@@ -133,7 +133,7 @@ $markets=array("Construction","Automobile","Windmill","Aerospace","Electrical In
 			?>
 			<img src="http://localhost/hsbutyl/assets/images/<?echo $parent['market_id']; ?>.png">
 			<!--<span class="img1" href="#"></span>-->
-			<span><?=$markets[$parent['market_id']-1];?></span>
+			<p class="market_img"><?=$markets[$parent['market_id']-1];?></p>
 			<?
 			}
 			?> 
