@@ -46,7 +46,7 @@ h1,h2{font-family: arialbd; font-size:30px; text-transform:uppercase;}
  .header .srch{}
 
 .sosusmenu:hover ul { position:absolute; display: block; z-index:99999;}
-.sosusmenu ul li{display:block; float:none !important; padding:11px 54px; border-bottom:1px solid #98BE86;}
+.sosusmenu ul li{display:block; float:none !important;/* padding:11px 54px;*/ padding-left:54px; line-height:42px; border-bottom:1px solid #98BE86;}
 .sosusmenu .const{ background:url(../images/sprite.png) -7px -480px   no-repeat;}
 .sosusmenu .automobi{ background:url(../images/sprite.png) -7px -440px  no-repeat;}
 .sosusmenu .widmill{ background:url(../images/sprite.png) -7px -520px  no-repeat;}
