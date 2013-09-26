@@ -5,7 +5,7 @@ function get_products($marketId=NULL)
 	{
 		if($marketId)
 		{
-			$this->db->select('*');
+			$this->db->select('product.id,product.name,product.details,product.description,product.uses,product.image');
 			$this->db->join('relation', 'relation.product_id = product.id');
 			$this->db->where('relation.market_id',$marketId);
 			return $this->db->get('product')->result_array();
@@ -19,7 +19,7 @@ function get_products($marketId=NULL)
 	{
 		if($productId)
 		{
-			$this->db->select('*');
+			$this->db->select('product.id,product.name,product.details,product.description,product.uses,product.image');
 			$this->db->where('id',$productId);
 			return $this->db->get('product')->result_array();
 		}
