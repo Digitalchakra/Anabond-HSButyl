@@ -29,6 +29,7 @@ class Product extends CI_Controller {
 					{
 						$data['product_first']=$data['product'][$key];
 						$data['selectedID'] = 1;
+						$data['parents']=$this->product_model->get_parents($pid);
 						break;
 					}
 			   }
@@ -36,6 +37,7 @@ class Product extends CI_Controller {
 			else
 			{
 				$data['product_first']=$data['product'][0];
+				$data['parents']=$this->product_model->get_parents($data['product'][0]['id']);
 			}
 			$data['view_page'] = 'product';
 		}
@@ -50,18 +52,16 @@ class Product extends CI_Controller {
 		print_r($data);
 		*/
 	}
-	public function json_list()
+	public function json_product()
 	{
-		$mid = ($this->uri->segment(3)) ? $this->uri->segment(3) : NULL;
+		$pid = ($this->uri->segment(3)) ? $this->uri->segment(3) : NULL;
 		$this->load->model('product_model');
-		if($mid)
+		if($pid)
 		{
-			$data['resultset']['product']=$this->product_model->get_products($mid);
+			$data['resultset']['product']=$this->product_model->get_product($pid);
+			$data['resultset']['parents']=$this->product_model->get_parents($pid);
+			$this->load->view('json', $data);
 		}
-		else
-		{
-			$data['resultset']['product']=$this->product_model->get_products();
-		}
-		$this->load->view('json', $data);
+		
 	}
 }

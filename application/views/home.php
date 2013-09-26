@@ -92,10 +92,10 @@
             <ul class="root">
             <li > <a mid='1' class= "market" >Construction</a> </li>
             <li > <a mid='2' class= "market">Automobile</a> </li>
-            <li > <span mid='3' class= "">Windmill</span> </li>
-            <li> <span mid='4' class= "">Aerospace</span> </li>
-            <li> <span mid='5' class= "">Electrical Industries</span> </li>
-            <li> <span mid='6' class= "">Silos</span> </li>
+            <li > <a mid='3' class= "market">Windmill</a> </li>
+            <li> <a mid='4' class= "market">Aerospace</a> </li>
+            <li> <a mid='5' class= "market">Electrical Industries</a> </li>
+            <li> <a mid='6' class= "market">Silos</a> </li>
           </ul>
           </div>
       </div>
@@ -180,53 +180,4 @@
    </div>
    <div class="clearall"></div>
 <script src="<?=base_url('assets/js/jquery.touchslider.min.js');?>" type="text/javascript"></script>
-  <script type="text/javascript" >
-  $(document).ready(function()
-  {
-	  $("#account").click(function()
-	  {
-	  $("#submenu").toggle();   
-	  });
-	  $('.market').click(function()
-	  {
-		  $("#submenu").hide();
-		  $("#account").html('<span>'+$(this).text()+'</span>');
-		  getproduct($(this).attr('mid'));
-	  });
-  });
-$(".touchslider").touchSlider({
-	autoplay: true,
-});
-
-function slideChange(args) 
-{
-	$('.selectors .item').removeClass('selected');
-	$('.selectors .item:eq(' + (args.currentSlideNumber - 1) + ')').addClass('selected');
-}
-function getproduct(mid)
-{
-	$.ajax({
-		type:"GET",
-		url:baseurl+"product/json_list/"+mid,
-		success: function(result)
-		{
-			html='';
-			$.each(result.resultset.product,function(index,row)
-			{
-				html+='<div class="box">';
-				html+='<div class="inside_box">';
-				html+=   	'<a href="'+baseurl+'product/index/'+row.id+'"><img src="'+baseurl+'assets/images/icon_S/'+row.image+'.png"  alt="" title="'+row.name+'"/></a>';
-				html+='</div>';
-				html+='<p>'+row.name+'</p>';
-				html+='</div>';
-			}
-			);
-			$('#product_box').html(html);
-		},
-		error: function()
-		{
-			alert('Internal error, try later !');
-		}
-		});
-}
-		</script>
+  <script src="<?=base_url('assets/js/home.js');?>" type="text/javascript" ></script>

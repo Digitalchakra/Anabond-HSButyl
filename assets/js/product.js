@@ -4,6 +4,7 @@ $(function() {
   $(document).ready(function()
   {
 	  getcaptcha();
+	  markets=["Construction","Automobile","Windmill","Aerospace","Electrical Industries","Silos"];
 	  $('#getcaptcha').click(function(){
 		  $('#captcha_img').html('loading...');
 		   getcaptcha();
@@ -11,6 +12,50 @@ $(function() {
 	  $("#account").click(function()
 	  {
 	  $("#submenu").toggle();   
+	  });
+	  
+	  $('.productname').click(function(event)
+	  {
+		  event.preventDefault();
+		  pid=$(this).attr('value');
+		  $("#submenu").hide();
+		  $.ajax({
+					url:baseurl+"product/json_product/"+pid,
+					dataType:"JSON",
+					type:"GET",
+					success: function(result)
+					{
+						product_details="";
+						product_uses="";
+						product_parents="";
+						$("#account").html('<span>'+result.resultset.product[0].name+'</span>');
+						$('.product_name').attr('value',result.resultset.product[0].name);
+						$('#product_name').html(result.resultset.product[0].name);
+						$('.product_image').attr('value',result.resultset.product[0].image);
+						$('#product_image').attr('src',baseurl+'assets/images/icon_L/'+result.resultset.product[0].image+'.png');
+						$('#product_description').html(result.resultset.product[0].description);
+						
+						$.each(result.resultset.product[0].details.split("#"), function(index, item) { 
+						product_details+='<li>'+item+'</li>';
+						});
+						$('#product_details').html(product_details);
+						
+						$.each(result.resultset.product[0].uses.split("#"), function(index, item) { 
+						product_uses+='<p class="bulll">'+item+'</p>';
+						});
+						$('#product_uses').html(product_uses);
+						
+						$.each(result.resultset.parents, function(index, item) {
+						product_parents+= '<img src="'+baseurl+'assets/images/'+item['market_id']+'.png">';
+						product_parents+='<span>'+markets[item['market_id']-1]+'</span>';
+						});
+						$('#product_parents').html(product_parents);
+					},
+					error: function()
+					{
+						alert("Internal error, Please try again");
+					}
+			  });
 	  });
 	/*  $('#email').keydown(function()
 			{

@@ -23,11 +23,26 @@ class Market extends CI_Controller {
 		{
 			$data['product_first']=$data['product'][0];
 			$data['view_page'] = 'product';
+			$data['parents']=$this->product_model->get_parents($data['product'][0]['id']);
 		}
 		else
 		{
 			$data['view_page'] = 'uc';
 		}
 		$this->load->view('template', $data);
+	}
+	public function json_list()
+	{
+		$mid = ($this->uri->segment(3)) ? $this->uri->segment(3) : NULL;
+		$this->load->model('product_model');
+		if($mid)
+		{
+			$data['resultset']['product']=$this->product_model->get_products($mid);
+		}
+		else
+		{
+			$data['resultset']['product']=$this->product_model->get_products();
+		}
+		$this->load->view('json', $data);
 	}
 }
