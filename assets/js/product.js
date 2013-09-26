@@ -47,7 +47,7 @@ $(function() {
 						
 						$.each(result.resultset.parents, function(index, item) {
 						product_parents+= '<img src="'+baseurl+'assets/images/'+item['market_id']+'.png">';
-						product_parents+='<span>'+markets[item['market_id']-1]+'</span>';
+						product_parents+='<p class="market_img">'+markets[item['market_id']-1]+'</p>';
 						});
 						$('#product_parents').html(product_parents);
 					},
