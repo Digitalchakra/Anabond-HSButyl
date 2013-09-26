@@ -23,23 +23,30 @@ class Product extends CI_Controller {
 		{
 			if($pid)
 			{
+				$found=0;
 				foreach($data['product'] as $key=>$row)
 			   {
 				  if ( $row['id'] === $pid )
 					{
+						$found=1;
 						$data['product_first']=$data['product'][$key];
 						$data['selectedID'] = 1;
 						$data['parents']=$this->product_model->get_parents($pid);
+						$data['view_page'] = 'product';
 						break;
 					}
+			   }
+			   if(!$found)
+			   {
+				   $data['view_page'] = 'uc';
 			   }
 			}
 			else
 			{
 				$data['product_first']=$data['product'][0];
 				$data['parents']=$this->product_model->get_parents($data['product'][0]['id']);
+				$data['view_page'] = 'product';
 			}
-			$data['view_page'] = 'product';
 		}
 		else
 		{
