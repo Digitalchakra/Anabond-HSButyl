@@ -34,7 +34,7 @@
 						<li>Local dealers – 300 dealers across all states in India </li>
 						<li>Product mixed using a state-of-the-art continuous mixer </li>
 						<li>Range of product formats </li>
-						<li>JV developed between two family businesses  </li>
+						<li>Both companies are more than 3 decades old, having vast experience in Butyl manufacturing</li>
 						<li>Development facility in UK and India  </li>
 					</ul>
           
