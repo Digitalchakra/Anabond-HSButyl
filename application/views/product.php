@@ -156,9 +156,9 @@ $markets=array("Construction","Automobile","Windmill","Aerospace","Electrical In
 		  </ul>
 		  <div class="tab_container">
 			<div id="tab1" class="tab_content">
-			  <p class="bulll" id="product_description"><?=$product_first['description'];?></p>
+			  <p id="product_description"><?=$product_first['description'];?></p>
 			  <!--<p class="bulll">Product uses</p>-->
-			  <p><u>Product uses</u></p>
+			  <p><b  class="product_use">Product uses</b></p>
 				<span id="product_uses">
 					<? 
 					$uses = explode('#',$product_first['uses']);
@@ -193,5 +193,5 @@ $markets=array("Construction","Automobile","Windmill","Aerospace","Electrical In
 <br/>
 <br/>
 <br/>
-	 <script src="<?=base_url('assets/js/jquery-ui.js');?>"></script>-->
+	 <script src="<?=base_url('assets/js/jquery-ui.js');?>"></script>
     <script src="<?=base_url('assets/js/product.js');?>"></script>
