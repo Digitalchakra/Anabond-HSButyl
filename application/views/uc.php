@@ -30,7 +30,7 @@ $markets=array("Construction","Automobile","Windmill","Aerospace","Electrical In
 <br/>
 <br/>
 <br/>
-<center>Under Construction</center>
+<center>Coming Soon…………</center>
     <div class="clearall"></div>
   </div>
   <div class="clearall"></div>
