@@ -68,7 +68,7 @@ class Contact extends CI_Controller {
 						$config['wordwrap'] = TRUE;
 						$config['mailtype']='html';
 						$this->email->initialize($config);
-						$this->email->from('support@digitalchakra.in', 'Digitalchakra');
+						$this->email->from('marketing@anabondhsbutyl.com', 'Digitalchakra');
 
 					/*	//Write mail to user
 						$this->email->subject('Thank your for your feedback - EZCV');
@@ -86,9 +86,10 @@ class Contact extends CI_Controller {
 						Email / Phone: '.$email.'<br />
 						Company: '.$company.'<br />
 						Product: '.$product.'<br />
-						Message: '.$message.'<br /><br />Regards<br />Digitalchakra Team';
+						Message: '.$message.'<br /><br />';
 						//$this->email->to('manimani1014@gmail.com');
-						$this->email->to('aditya@digitalchakra.in');
+						//$this->email->to('aditya@digitalchakra.in');
+						$this->email->to('marketing@anabondhsbutyl.com');
 						$this->email->message($content2);
 						$this->email->send();
 
